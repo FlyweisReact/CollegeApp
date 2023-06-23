@@ -3,21 +3,27 @@ import Navbar from "./Navbar";
 import Banner from "./Banner";
 import TopPart from "./TopPart";
 import Footer from "./Footer";
+
+import img from "../Images/c50.png";
+import img2 from "../Images/c51.png";
+import img3 from "../Images/c52.png";
+import img4 from "../Images/c53.png";
+import img5 from "../Images/c54.png";
 import img8 from "../Images/c57.png";
 import img9 from "../Images/c58.png";
+import img6 from "../Images/c55.png";
 
 import MobileLoanNavbar from "./MobileLoanNavabr";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-const CollegePlacement = () => {
+const CutOff = () => {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => setShow(true);  
   return (
     <>
-      <div className="loan100">
+        <div className="loan100">
         <i class="fa-solid fa-bars" onClick={handleShow}></i>
       </div>
       <Navbar />
@@ -272,4 +278,4 @@ Jamia Millia Islamia University will offer several new courses from the academic
   );
 };
 
-export default CollegePlacement;
+export default CutOff;

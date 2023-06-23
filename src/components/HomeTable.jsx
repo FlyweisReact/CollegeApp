@@ -5,6 +5,7 @@ import img2 from "../Images/c92.png";
 const HomeTable = () => {
   return (
     <>
+    <div className="table100">
       <div className="table1">
         <table>
           <thead>
@@ -225,6 +226,7 @@ const HomeTable = () => {
           </tbody>
         </table>
       </div>
+    </div>
     </>
   );
 };

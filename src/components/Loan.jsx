@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import LoanNavbar from "./LoanNavbar";
 import MobileLoanNavbar from "./MobileLoanNavabr";
 import Footer from "./Footer";
+import {useNavigate} from "react-router-dom";
 import img from "../Images/c63.png";
 import img2 from "../Images/c64.png";
 import img3 from "../Images/c65.png";
@@ -23,9 +24,9 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const Loan = () => {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const navigate = useNavigate();
   return (
     <>
       <LoanNavbar />
@@ -109,7 +110,7 @@ const Loan = () => {
           </div>
           <div className="loan18">
             <div className="ext1">
-              <button className="ext2">Eligibility Check</button>
+              <button className="ext2" onClick={()=>navigate("/eligibility-check")}>Eligibility Check</button>
               <button className="ext3">Apply Now</button>
             </div>
           </div>
@@ -137,7 +138,7 @@ const Loan = () => {
           </div>
           <div className="loan18">
           <div className="ext1">
-              <button className="ext2">Eligibility Check</button>
+              <button className="ext2" onClick={()=>navigate("/eligibility-check")}>Eligibility Check</button>
               <button className="ext3">Apply Now</button>
             </div>
           </div>
@@ -165,7 +166,7 @@ const Loan = () => {
           </div>
           <div className="loan18">
           <div className="ext1">
-              <button className="ext2">Eligibility Check</button>
+              <button className="ext2" onClick={()=>navigate("/eligibility-check")}>Eligibility Check</button>
               <button className="ext3">Apply Now</button>
             </div>
           </div>
@@ -193,7 +194,7 @@ const Loan = () => {
           </div>
           <div className="loan18">
           <div className="ext1">
-              <button className="ext2">Eligibility Check</button>
+              <button className="ext2" onClick={()=>navigate("/eligibility-check")}>Eligibility Check</button>
               <button className="ext3">Apply Now</button>
             </div>
           </div>

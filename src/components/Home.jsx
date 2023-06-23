@@ -245,7 +245,8 @@ const Home = () => {
 
   return (
     <>
-      <MyVerticallyCenteredModal show={show} onHide={() => setShow(false)} />
+      <MyVerticallyCenteredModal 
+      show={show} onHide={() => setShow(false)} />
       <div className="home200">
       <div className="home1">
         <Slider {...settings}>

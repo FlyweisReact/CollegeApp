@@ -25,10 +25,10 @@ const TopPart = ()=>{
         <div className="clg11">
           <p className={location.pathname === "/college-info"? "clg12" : "clg13"} onClick={()=>navigate("/college-info")}>Info </p>
           <p className={location.pathname === "/college-placement"? "clg12" : "clg13"} onClick={()=>navigate("/college-placement")}>Placements</p>
-          <p className={location.pathname === "/course-fee"? "clg12" : "clg13"} onClick={()=>navigate("/course-fee")}>Courses and Fee</p>
+          <p className={location.pathname === "/course-fee"? "clg12" : "clg13"} onClick={()=>navigate("/course-fee")}>Courses & Fee</p>
           <p className={location.pathname === "/admission"? "clg12" : "clg13"} onClick={()=>navigate("/admission")}>Admission</p>
-          <p className={location.pathname === "/admission"? "clg12" : "clg13"} onClick={()=>navigate("/admission")}>Cut off</p>
-          <p className={location.pathname === "/admission"? "clg12" : "clg13"} onClick={()=>navigate("/admission")}>Review</p>
+          <p className={location.pathname === "/cut-off"? "clg12" : "clg13"} onClick={()=>navigate("/cut-off")}>Cut off</p>
+          <p className={location.pathname === "/admissions"? "clg12" : "clg13"} onClick={()=>navigate("/admission")}>Review</p>
           <p className="clg13" onClick={()=>navigate("/admission")}>Infrastructure</p>
           <p className={location.pathname === "/gallery"? "clg12" : "clg13"} 
             onClick={()=>navigate("/gallery")}

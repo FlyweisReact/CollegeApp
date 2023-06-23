@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
 import TopPart from "./TopPart";
@@ -12,9 +12,19 @@ import img7 from "../Images/c56.png";
 import img8 from "../Images/c57.png";
 import img9 from "../Images/c58.png";
 
+import MobileLoanNavbar from "./MobileLoanNavabr";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
 const Gallery = ()=>{
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);  
     return(
         <>
+          <div className="loan100">
+          <i class="fa-solid fa-bars" onClick={handleShow}></i>
+          </div>
             <Navbar />
             <Banner />
             <TopPart />
@@ -138,6 +148,14 @@ const Gallery = ()=>{
         </div>
             </div>
             <Footer />
+            <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <MobileLoanNavbar />
+        </Offcanvas.Body>
+      </Offcanvas>
         </>
     )
 }

@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import MobileLoanNavbar from "./MobileLoanNavabr"
 import img from "../Images/c29.png";
 import img2 from "../Images/c28.png";
 import img3 from "../Images/c24.png";
@@ -353,9 +354,10 @@ const Screen3 = () => {
       <Footer />
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title><MobileLoanNavbar /></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
+         
           <Sidebar />
         </Offcanvas.Body>
       </Offcanvas>

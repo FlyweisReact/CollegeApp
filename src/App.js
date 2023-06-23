@@ -30,6 +30,8 @@ import Insurance from "./components/Insurance";
 import Counsellor from "./components/Counsellor";
 import Rewards from "./components/Rewards";
 import Setting from "./components/Setting";
+import CutOff from "./components/CutOff";
+import EligibilityCheck from "./components/EligibilityCheck";
 
 function App() {
   return (
@@ -65,6 +67,8 @@ function App() {
           <Route path="/counsellor" element={<Counsellor />} />
           <Route path="/rewards" element={<Rewards />} />
           <Route path="/setting" element={<Setting />} />
+          <Route path="/cut-off" element={<CutOff />} />
+          <Route path="/eligibility-check" element={<EligibilityCheck />} />
         </Routes>
       </BrowserRouter>
     </>

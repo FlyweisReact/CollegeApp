@@ -10,6 +10,9 @@ import img from "../Images/c34.png";
 import img2 from "../Images/c35.png";
 import img3 from "../Images/c1.png";
 import MyVerticallyCenteredModal from "./CouncilModal";
+import Modal from "react-bootstrap/Modal";
+import "bootstrap/dist/css/bootstrap.min.css";
+import img27 from "../Images/c59.png";
 
 const TopPart2 = ()=>{
     const navigate = useNavigate();
@@ -27,6 +30,51 @@ const TopPart2 = ()=>{
 
     const handleClose = () => setShow2(false);
     const handleShow = () => setShow2(true);
+    const [showt, setShowt] = useState(false);
+    function MyVerticallyCenteredModal2(props) {
+      console.log("Hello");
+      return (
+        <Modal
+          {...props}
+          size="lg"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+        >
+          <Modal.Header closeButton></Modal.Header>
+          <Modal.Body>
+            <>
+              <div className="login1">
+                <div className="login2">
+                  <h4>Login</h4>
+                  <div className="login3">
+                    <div className="login4">
+                      <div className="login8">
+                        <div className="login6">
+                          <p>+91</p>
+                        </div>
+                        <div className="login7">
+                          <input
+                            type="text"
+                            placeholder="Enter your mobile number"
+                          />
+                        </div>
+                      </div>
+                      <div className="login9">
+                        <button>Request OTP</button>
+                      </div>
+                    </div>
+                    <div className="login5">
+                      <img src={img27} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          </Modal.Body>
+        </Modal>
+      );
+    }
+  
 
     return (
         <div className="home1">
@@ -35,6 +83,8 @@ const TopPart2 = ()=>{
             onHide={() => show(false)}
             setShow = {setShow}
           />
+          <MyVerticallyCenteredModal2 
+      show={showt} onHide={() => setShowt(false)} />
         <Slider {...settings}>
 
           <div className="car1">
@@ -57,7 +107,7 @@ const TopPart2 = ()=>{
               <p onClick={()=>navigate("/test2")}>Test</p>
               <p onClick={()=>setShow(true)}>Get Counselling</p>
             </div>
-            <div className="sch4">
+            <div className="sch4" onClick={()=>setShowt(true)}>
               <i class="fa-solid fa-user"></i>
               <p>Login</p>
             </div>
