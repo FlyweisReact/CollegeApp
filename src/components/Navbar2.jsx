@@ -57,13 +57,82 @@ const Navbar2 = () => {
     );
   }
 
+  const [showNavbar, setShowNavbar] = useState(false);
+  function NavMenu(){
+    return (
+      <>
+        <div className="menu1">
+          <h3>Top Universities</h3>
+          <div className="menu2">
+            <div className="menu3">
+              <h6>Delhi</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <h6>Mumbai</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <h6>Chennai</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4">hello</div>
+            <div className="menu3">
+              <h6>Bangalore</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+          </div>
+        </div>
+      </>
+    )
+  }
+
+  const handleClick = ()=>{
+    setShowNavbar(prev=>!prev);
+  }
+
+
   return (
     <>
       <MyVerticallyCenteredModal show={showt} onHide={() => setShowt(false)} />
       <MyVerticallyCenteredModal2
         show={show}
-        onHide={() => show(false)}
-        setShow={setShow}
+        onHide={() => setShow(false)}
       />
       <div className="connect2">
         <div className="connect3">
@@ -72,15 +141,15 @@ const Navbar2 = () => {
         <div className="connect4">
           <div className="connect5">
             <p>Courses</p>
-            <img src={img3} alt="" />
+            <img src={img3} alt="" onClick={handleClick}/>
           </div>
           <div className="connect5">
             <p>Colleges</p>
-            <img src={img3} alt="" />
+            <img src={img3} alt="" onClick={handleClick}/>
           </div>
           <div className="connect5 cnt">
             <p>Study Guide</p>
-            <img src={img3} alt="" />
+            <img src={img3} alt="" onClick={handleClick}/>
           </div>
           <div className="connect5">
             <p onClick={()=>navigate("/test2")}>Test</p>
@@ -94,6 +163,9 @@ const Navbar2 = () => {
           <p style={{ marginTop: "10px" }}>Login</p>
         </div>
       </div>
+      {
+        showNavbar ? <NavMenu /> : " "
+      }
     </>
   );
 };

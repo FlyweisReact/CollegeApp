@@ -28,8 +28,8 @@ const TopPart = ()=>{
           <p className={location.pathname === "/course-fee"? "clg12" : "clg13"} onClick={()=>navigate("/course-fee")}>Courses & Fee</p>
           <p className={location.pathname === "/admission"? "clg12" : "clg13"} onClick={()=>navigate("/admission")}>Admission</p>
           <p className={location.pathname === "/cut-off"? "clg12" : "clg13"} onClick={()=>navigate("/cut-off")}>Cut off</p>
-          <p className={location.pathname === "/admissions"? "clg12" : "clg13"} onClick={()=>navigate("/admission")}>Review</p>
-          <p className="clg13" onClick={()=>navigate("/admission")}>Infrastructure</p>
+          <p className={location.pathname === "/college-review"? "clg12" : "clg13"} onClick={()=>navigate("/college-review")}>Review</p>
+          <p className={location.pathname === "/infrastructure"? "clg12" : "clg13"} onClick={()=>navigate("/infrastructure")}>Infrastructure</p>
           <p className={location.pathname === "/gallery"? "clg12" : "clg13"} 
             onClick={()=>navigate("/gallery")}
           >Gallery</p>

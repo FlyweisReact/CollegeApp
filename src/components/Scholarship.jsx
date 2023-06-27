@@ -1,10 +1,12 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "./Footer";
-import TopPart2 from "./TopPart2";
+import img from "../Images/c34.png";
+import img2 from "../Images/c1.png";
+import img3 from "../Images/c85.png";
 import img4 from "../Images/c36.png";
 import img5 from "../Images/c37.png";
 import img6 from "../Images/c38.png";
@@ -12,16 +14,13 @@ import img6 from "../Images/c38.png";
 const Scholarship = () => {
   const navigate = useNavigate();
   const [slideShow2, setSlideShow2] = useState(8);
-  useEffect(()=>{
-      if(window.innerWidth < 800){
-
-          setSlideShow2(3);
-      }
-      else if(window.innerWidth > 800 && window.innerWidth < 1100){
-          setSlideShow2(3);
-      }
-      else setSlideShow2(4);
-  })
+  useEffect(() => {
+    if (window.innerWidth < 800) {
+      setSlideShow2(3);
+    } else if (window.innerWidth > 800 && window.innerWidth < 1100) {
+      setSlideShow2(3);
+    } else setSlideShow2(4);
+  });
   const settings = {
     dots: true,
     infinite: true,
@@ -40,11 +39,140 @@ const Scholarship = () => {
     autoplay: true,
   };
 
+  const [showNavbar, setShowNavbar] = useState(false);
+  const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
+  const handleClose = () => setShow2(false);
+  const handleShow = () => setShow2(true);
+  const [show3, setShow3] = useState(false);
 
+  function NavMenu() {
+    return (
+      <>
+        <div className="menu1">
+          <h3>Top Universities</h3>
+          <div className="menu2">
+            <div className="menu3">
+              <h6>Delhi</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <h6>Mumbai</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <h6>Chennai</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <h6>Bangalore</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  const handleClick = () => {
+    setShowNavbar((prev) => !prev);
+  };
 
   return (
     <>
-      <TopPart2 />
+      <div className="app1">
+        <div className="home100">
+          <i class="fa-solid fa-bars" onClick={handleShow}></i>
+        </div>
+        <div className="app6">
+          <img src={img} />
+        </div>
+        <div className="home2">
+          <div className=" sch1 app4">
+            <img src={img2} alt="" onClick={() => navigate("/")} />
+            <div className="connect4">
+              <div className="connect5" >
+                <p>Courses</p>
+                <img src={img3} alt="" onClick={handleClick} />
+              </div>
+              <div className="connect5 ">
+                <p>Colleges</p>
+                <img src={img3} alt="" onClick={handleClick} />
+              </div>
+              <div className="connect5 cnt ">
+                <p>Study Guide</p>
+                <img src={img3} alt="" onClick={handleClick} />
+              </div>
+              <div className="connect5 n">
+                <p onClick={() => navigate("/test2")}>Test</p>
+              </div>
+              <div className="connect5 cnt ">
+                <p onClick={() => setShow(true)}>Get Counselling</p>
+              </div>
+            </div>
+            {/*<div className="app2 ">
+              <p>Courses</p>
+              <p>Colleges</p>
+              <p>Style Guide</p>
+              <p onClick={()=>navigate("/test2")}>Test</p>
+              <p onClick={()=>setShow(true)}>Get Counselling</p>
+            </div>*/}
+            <div className="app3" onClick={() => setShow3(true)}>
+              <i class="fa-solid fa-user"></i>
+              <p>Login</p>
+            </div>
+          </div>
+          {showNavbar ? <NavMenu /> : " "}
+
+          <div className="home5 sch2 app5">
+            <h2>
+              One Application and Limitless Possibilities to 200+ Colleges
+              across India!
+            </h2>
+          </div>
+          <div className="home6">
+            <button onClick={() => navigate("/screen2")}>
+              Explore College & University
+            </button>
+          </div>
+        </div>
+      </div>
       <div className="home25" style={{ marginTop: "60px" }}>
         <div className="home26">
           <Slider {...settings3}>
@@ -104,7 +232,7 @@ const Scholarship = () => {
                   <li>Level of Study : Bachelor</li>
                   <li>No. of Scholarships : 20</li>
                 </ul>
-                <p onClick={()=>navigate("/read-more")}>Read More</p>
+                <p onClick={() => navigate("/read-more")}>Read More</p>
               </div>
               <div className="sch18">
                 <button className="sch19">Apply Now</button>

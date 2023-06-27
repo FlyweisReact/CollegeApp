@@ -4,14 +4,10 @@ import Banner from "./Banner";
 import TopPart from "./TopPart";
 import Footer from "./Footer";
 
-import img from "../Images/c50.png";
-import img2 from "../Images/c51.png";
-import img3 from "../Images/c52.png";
-import img4 from "../Images/c53.png";
-import img5 from "../Images/c54.png";
+
 import img8 from "../Images/c57.png";
 import img9 from "../Images/c58.png";
-import img6 from "../Images/c55.png";
+
 
 import MobileLoanNavbar from "./MobileLoanNavabr";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -23,7 +19,7 @@ const CutOff = () => {
   const handleShow = () => setShow(true);  
   return (
     <>
-        <div className="loan100">
+      <div className="loan100">
         <i class="fa-solid fa-bars" onClick={handleShow}></i>
       </div>
       <Navbar />

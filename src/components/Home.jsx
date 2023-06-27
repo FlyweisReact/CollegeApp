@@ -33,32 +33,31 @@ import img27 from "../Images/c59.png";
 import Dropdown from "react-bootstrap/Dropdown";
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import Offcanvas from "react-bootstrap/Offcanvas";
 import HomeTable from "./HomeTable";
 
 import Records from "./data.json";
 
-
 const Home = () => {
   const navigate = useNavigate();
   const [showt, setShowt] = useState(false);
+
+  const [faltu, setFaltu] = useState(true);
 
   const handleClose = () => setShowt(false);
   const handleShow = () => setShowt(true);
 
   const [slideShow, setSlideShow] = useState(4);
   const [slideShow2, setSlideShow2] = useState(8);
-  useEffect(()=>{
-      if(window.innerWidth < 800){
-          setSlideShow(1);
-          setSlideShow2(3);
-      }
-      else if(window.innerWidth > 800 && window.innerWidth < 1100){
-          setSlideShow(2);
-          setSlideShow2(3);
-      }
-      else setSlideShow(4);
-  })
+  useEffect(() => {
+    if (window.innerWidth < 800) {
+      setSlideShow(1);
+      setSlideShow2(3);
+    } else if (window.innerWidth > 800 && window.innerWidth < 1100) {
+      setSlideShow(2);
+      setSlideShow2(3);
+    } else setSlideShow(4);
+  });
 
   const moreMenu = [
     {
@@ -70,7 +69,7 @@ const Home = () => {
     },
     {
       name: "Test and Services  ",
-      "link":"/test"
+      link: "/test",
     },
     {
       name: "Practice Questions",
@@ -78,7 +77,7 @@ const Home = () => {
 
     {
       name: "Loan",
-      "link":"/loan"
+      link: "/loan",
     },
 
     {
@@ -91,15 +90,15 @@ const Home = () => {
     },
     {
       name: "Become a partner",
-      link:"/become-partner"
+      link: "/become-partner",
     },
     {
       name: "One Stop Solution",
-      "link":"/one-stop"
+      link: "/one-stop",
     },
     {
       name: "Profile",
-      "link":"/profile"
+      link: "/profile",
     },
   ];
 
@@ -175,104 +174,109 @@ const Home = () => {
   }
 
   const [showNavbar, setShowNavbar] = useState(false);
-    function NavMenu(){
-      return (
-        <>
-          <div className="menu1">
-            <h3>Top Universities</h3>
-            <div className="menu2">
-              <div className="menu3">
-                <h6>Delhi</h6>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div className="menu4"></div>
-              <div className="menu3">
-                <h6>Mumbai</h6>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div className="menu4"></div>
-              <div className="menu3">
-                <h6>Chennai</h6>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div className="menu4"></div>
-              <div className="menu3">
-                <h6>Bangalore</h6>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div className="menu4"></div>
+  function NavMenu() {
+    return (
+      <>
+        <div className="menu1">
+          <h3>Top Universities</h3>
+          <div className="menu2">
+            <div className="menu3">
+              <h6>Delhi</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
             </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <h6>Mumbai</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <h6>Chennai</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <h6>Bangalore</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
           </div>
-        </>
-      )
-    }
+        </div>
+      </>
+    );
+  }
 
-    const handleClick = ()=>{
-      setShowNavbar(prev=>!prev);
-    }
+  const handleClick = () => {
+    setShowNavbar((prev) => !prev);
+  };
+
+  const handleFaltu = () => {
+    setFaltu((prev) => !prev);
+  };
 
   return (
     <>
-      <MyVerticallyCenteredModal 
-      show={show} onHide={() => setShow(false)} />
+      <MyVerticallyCenteredModal show={show} onHide={() => setShow(false)} />
       <div className="home200">
-      <div className="home1">
-        <Slider {...settings}>
-          <div className="car1">
-            <img src={img26} />
-          </div>
-          <div className="car1">
-            <img src={img} />
-          </div>
-        </Slider>
-        <div className="home2">
-          <div className="home100">
-            <i class="fa-solid fa-bars" onClick={handleShow}></i>
-          </div>
-          <div className="home3">
-            <img src={img3} alt="" />
-            <>
-              <div className="drop3">
-                <p onClick={handleClick}>Top Universities</p>
-                <p onClick={handleClick}>Top Courses</p>
-                <p onClick={()=>navigate("/scholarships")}>Scholarship</p>
-                <p onClick={handleClick}>Exam</p>
-                <p onClick={()=>navigate("/common-applications")}>Common Application</p>
-                <p onClick={()=>navigate("/loan")}>Loan</p>
-                <p onClick={handleClick}>Admission 2023</p>
-                {/*Records?.map((ele, i) =>
+        <div className="home1">
+          <Slider {...settings}>
+            <div className="car1">
+              <img src={img26} />
+            </div>
+            <div className="car1">
+              <img src={img} />
+            </div>
+          </Slider>
+          <div className="home2">
+            <div className="home100">
+              <i class="fa-solid fa-bars" onClick={handleShow}></i>
+            </div>
+            <div className="home3">
+              <img src={img3} alt="" className="logoimg" />
+              <>
+                <div className="drop3">
+                  <p onClick={handleClick}>Top Universities</p>
+                  <p onClick={handleClick}>Top Courses</p>
+                  <p onClick={() => navigate("/scholarships")}>Scholarship</p>
+                  <p onClick={handleClick}>Exam</p>
+                  <p onClick={() => navigate("/common-applications")}>
+                    Common Application
+                  </p>
+                  <p onClick={() => navigate("/loan")}>Loan</p>
+                  <p onClick={handleClick}>Admission 2023</p>
+                  {/*Records?.map((ele, i) =>
                   ele?.item ? (
                     <Dropdown key={i}>
                       <Dropdown.Toggle variant="none" id="dropdown-basic">
@@ -303,46 +307,46 @@ const Home = () => {
                       </p>
                   )
                 )*/}
-              </div>
-            </>
-            <p>
-              <Dropdown>
-                <Dropdown.Toggle variant="none" id="dropdown-basic">
-                  More
-                </Dropdown.Toggle>
+                </div>
+              </>
+              <p>
+                <Dropdown>
+                  <Dropdown.Toggle variant="none" id="dropdown-basic">
+                    More
+                  </Dropdown.Toggle>
 
-                <Dropdown.Menu>
-                  {moreMenu?.map((ele, i) => (
-                    <Dropdown.Item href={ele?.link}>{ele?.name}</Dropdown.Item>
-                  ))}
-                </Dropdown.Menu>
-              </Dropdown>
-            </p>
-            <div className="login10" style={{marginTop:"-31px"}}>
-              <i class="fa-solid fa-user"></i>
-              <p onClick={() => setShow(true)}>Login</p>
+                  <Dropdown.Menu>
+                    {moreMenu?.map((ele, i) => (
+                      <Dropdown.Item href={ele?.link}>
+                        {ele?.name}
+                      </Dropdown.Item>
+                    ))}
+                  </Dropdown.Menu>
+                </Dropdown>
+              </p>
+              <div className="login10" style={{ marginTop: "-31px" }}>
+                <i class="fa-solid fa-user"></i>
+                <p onClick={() => setShow(true)}>Login</p>
+              </div>
+            </div>
+            {showNavbar ? <NavMenu /> : " "}
+            <div className="home4">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Search for colleges, exams, Q & A, articles"
+              />
+            </div>
+            <div className="home5">
+              <h2>Let's start your career journey.</h2>
+            </div>
+            <div className="home6">
+              <button onClick={() => navigate("/screen2")}>
+                Explore College & University
+              </button>
             </div>
           </div>
-          {
-                  showNavbar ? <NavMenu /> : " "
-          }
-          <div className="home4">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input
-              type="text"
-              placeholder="Search for colleges, exams, Q & A, articles"
-            />
-          </div>
-          <div className="home5">
-            <h2>Let's start your career journey.</h2>
-          </div>
-          <div className="home6">
-            <button onClick={() => navigate("/screen2")}>
-              Explore College & University
-            </button>
-          </div>
         </div>
-      </div>
       </div>
       <div className="home7">
         <h2>Top Cities</h2>
@@ -352,23 +356,23 @@ const Home = () => {
             <p>Delhi</p>
           </div>
           <div className="home9">
-            <img src={img5} alt="" onClick={() => navigate("/delhi")} />
+            <img src={img5} alt="" onClick={() => navigate("/mumbai")} />
             <p>Mumbai</p>
           </div>
           <div className="home9">
-            <img src={img6} alt="" onClick={() => navigate("/delhi")} />
+            <img src={img6} alt="" onClick={() => navigate("/kolkata")} />
             <p>Kolkata</p>
           </div>
           <div className="home9">
-            <img src={img7} alt="" onClick={() => navigate("/delhi")} />
+            <img src={img7} alt="" onClick={() => navigate("/chennai")} />
             <p>Chennai</p>
           </div>
           <div className="home9">
-            <img src={img8} alt="" onClick={() => navigate("/delhi")} />
+            <img src={img8} alt="" onClick={() => navigate("/agra")} />
             <p>Agra</p>
           </div>
           <div className="home9">
-            <img src={img9} alt="" onClick={() => navigate("/delhi")} />
+            <img src={img9} alt="" onClick={() => navigate("/jaipur")} />
             <p>Jaipur</p>
           </div>
         </div>
@@ -386,7 +390,7 @@ const Home = () => {
                   <p>30,000 yearly</p>
                 </div>
                 <div className="home15">
-                  <h5>9.5/10</h5>
+                  <h5><i class="fa-solid fa-star"></i> 9.5/10</h5>
                   <p>20.5k Reviews</p>
                 </div>
               </div>
@@ -415,11 +419,13 @@ const Home = () => {
               <img src={img12} alt="" />
               <div className="home13">
                 <div className="home14">
-                  <h4>Jamai milia islamia</h4>
+                  <h4>Delhi Technology University</h4>
                   <p>30,000 yearly</p>
                 </div>
                 <div className="home15">
-                  <h5>9.5/10</h5>
+                  <h5>
+                    <i class="fa-solid fa-star"></i> 9.5/10
+                  </h5>
                   <p>20.5k Reviews</p>
                 </div>
               </div>
@@ -448,11 +454,11 @@ const Home = () => {
               <img src={img13} alt="" />
               <div className="home13">
                 <div className="home14">
-                  <h4>Jamai milia islamia</h4>
+                  <h4>Miranda House</h4>
                   <p>30,000 yearly</p>
                 </div>
                 <div className="home15">
-                  <h5>9.5/10</h5>
+                  <h5> <i class="fa-solid fa-star"></i> 9.5/10</h5>
                   <p>20.5k Reviews</p>
                 </div>
               </div>
@@ -485,7 +491,7 @@ const Home = () => {
                   <p>30,000 yearly</p>
                 </div>
                 <div className="home15">
-                  <h5>9.5/10</h5>
+                  <h5> <i class="fa-solid fa-star"></i> 9.5/10</h5>
                   <p>20.5k Reviews</p>
                 </div>
               </div>
@@ -518,14 +524,18 @@ const Home = () => {
                   <p>30,000 yearly</p>
                 </div>
                 <div className="home15">
-                  <h5>9.5/10</h5>
+                  <h5> <i class="fa-solid fa-star"></i> 9.5/10</h5>
                   <p>20.5k Reviews</p>
                 </div>
               </div>
               <hr className="home16" />
               <div className="home17">
                 <p>View all courses and fees</p>
-                <img src={img11} alt="" onClick={() => navigate("/college-info")} />
+                <img
+                  src={img11}
+                  alt=""
+                  onClick={() => navigate("/college-info")}
+                />
               </div>
               <hr className="home16" />
               <div className="home17">
@@ -546,8 +556,12 @@ const Home = () => {
         <h2>Explore your future</h2>
         <p>Select your college</p>
         <div className="home19">
-          <div className="home20">Colleges</div>
-          <div className="home20">Exams</div>
+          <div className={faltu ? "home20" : "home200"} onClick={handleFaltu}>
+            Colleges
+          </div>
+          <div className={faltu ? "home200" : "home20"} onClick={handleFaltu}>
+            Exams
+          </div>
         </div>
         <div className="home21">
           <div className="home22" onClick={() => navigate("/management")}>
@@ -825,10 +839,9 @@ const Home = () => {
       <HomeTable />
       <Footer />
       <Offcanvas show={showt} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
-        </Offcanvas.Header>
+        <Offcanvas.Header closeButton></Offcanvas.Header>
         <Offcanvas.Body>
-        <div className="home101">
+          <div className="home101">
             <img src={img3} alt="" />
             <>
               <div className="drop100">

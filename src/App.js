@@ -32,6 +32,15 @@ import Rewards from "./components/Rewards";
 import Setting from "./components/Setting";
 import CutOff from "./components/CutOff";
 import EligibilityCheck from "./components/EligibilityCheck";
+import PayNow from "./components/PayNow";
+import Cart from "./components/Cart";
+import CollegeReview from "./components/CollegeReview";
+import Infrastructure from "./components/Infrastructure";
+import Mumbai from "./components/Cities/Mumbai";
+import Kolkata from "./components/Cities/Kolkata";
+import Chennai from "./components/Cities/Chennai";
+import Agra from "./components/Cities/Agra";
+import Jaipur from "./components/Cities/Jaipur";
 
 function App() {
   return (
@@ -69,6 +78,15 @@ function App() {
           <Route path="/setting" element={<Setting />} />
           <Route path="/cut-off" element={<CutOff />} />
           <Route path="/eligibility-check" element={<EligibilityCheck />} />
+          <Route path="/pay-now" element={<PayNow />} />
+          <Route path="/college-review" element={<CollegeReview />} />
+          <Route path="/infrastructure" element={<Infrastructure />} />
+          <Route path="/mumbai" element={<Mumbai />} />
+          <Route path="/kolkata" element={<Kolkata />} />
+          <Route path="/chennai" element={<Chennai />} />
+          <Route path="/agra" element={<Agra />} />
+          <Route path="/jaipur" element={<Jaipur />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </>

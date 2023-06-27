@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import img from "../Images/c39.png";
 import img2 from "../Images/c1.png";
+import img3 from "../Images/c114.png";
 import img7 from "../Images/c44.png";
 import img8 from "../Images/c45.png";
 import img9 from "../Images/c46.png";
@@ -10,6 +11,7 @@ import TopPart3 from "./TopPart3";
 import MyVerticallyCenteredModal from "./CouncilModal";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import MobileLoanNavbar from "./MobileLoanNavabr";
+import LoginModal from "./LoginModal";
 
 const CommonApplication = () => {
   const navigate = useNavigate();
@@ -17,13 +19,85 @@ const CommonApplication = () => {
   const [show2, setShow2] = useState(false);
   const handleClose = () => setShow2(false);
   const handleShow = () => setShow2(true);
+  const [show3, setShow3] = useState(false);
+
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  function NavMenu(){
+    return (
+      <>
+        <div className="menu1">
+          <h3>Top Universities</h3>
+          <div className="menu2">
+            <div className="menu3">
+              <h6>Delhi</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <h6>Mumbai</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <h6>Chennai</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <h6>Bangalore</h6>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+          </div>
+        </div>
+      </>
+    )
+  }
+
+  const handleClick = ()=>{
+    setShowNavbar(prev=>!prev);
+  }
+
   return (
     <>
         <MyVerticallyCenteredModal
         show={show}
-        onHide={() => show(false)}
-        setShow = {setShow}
+        onHide={() => setShow(false)}
       />
+      <LoginModal show={show3} onHide={()=>setShow3(false)} />
       <div className="app1">
       <div className="home100">
           <i class="fa-solid fa-bars" onClick={handleShow}></i>
@@ -34,18 +108,41 @@ const CommonApplication = () => {
         <div className="home2">
           <div className=" sch1 app4">
             <img src={img2} alt="" onClick={() => navigate("/")} />
-            <div className="app2 ">
+            <div className="connect4">
+          <div className="connect5 nav3p">
+            <p>Courses</p>
+            <img src={img3} alt="" onClick={handleClick} />
+          </div>
+          <div className="connect5 nav3p">
+            <p>Colleges</p>
+            <img src={img3} alt="" onClick={handleClick} />
+          </div>
+          <div className="connect5 cnt nav3p">
+            <p>Study Guide</p>
+            <img src={img3} alt="" onClick={handleClick} />
+          </div>
+          <div className="connect5 nav3p">
+            <p onClick={()=>navigate("/test2")}>Test</p>
+          </div>
+          <div className="connect5 cnt nav3p">
+            <p onClick={() => setShow(true)}>Get Counselling</p>
+          </div>
+        </div>
+            {/*<div className="app2 ">
               <p>Courses</p>
               <p>Colleges</p>
               <p>Style Guide</p>
               <p onClick={()=>navigate("/test2")}>Test</p>
               <p onClick={()=>setShow(true)}>Get Counselling</p>
-            </div>
-            <div className="app3">
+            </div>*/}
+            <div className="app3" onClick={()=>setShow3(true)}>
               <i class="fa-solid fa-user"></i>
               <p>Login</p>
             </div>
           </div>
+          {
+          showNavbar ? <NavMenu /> : " "
+          }
           <div className="home5 sch2 app5">
             <h2>
               One Application and Limitless Possibilities to 200+ Colleges

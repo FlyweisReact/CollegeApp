@@ -13,8 +13,7 @@ const Navbar = () => {
     <>
       <MyVerticallyCenteredModal
         show={show}
-        onHide={() => show(false)}
-        setShow = {setShow}
+        onHide={() => setShow(false)}
       />
       <div className="nav1">
         <div className="nav2">

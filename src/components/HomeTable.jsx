@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../Images/c91.png";
 import img2 from "../Images/c92.png";
+import img3 from "../Images/c106.png";
 
 const HomeTable = () => {
   return (
@@ -20,7 +21,7 @@ const HomeTable = () => {
           </thead>
           <tbody>
             <tr>
-              <td>#1</td>
+              <td><p className="table12">#1</p></td>
               <td>
                 <div className="table8">
                   <div className="table9">
@@ -30,7 +31,7 @@ const HomeTable = () => {
                     <h6>India institute of Management [ IIM ]</h6>
                     <p>
                       Indore, Madhya Pradesh |{" "}
-                      <i class="fa-solid fa-star" style={{ color: "gold" }}></i>{" "}
+                      <i class="fa-solid fa-star" style={{ color: "gold" }}></i>
                       8.7 / 10
                     </p>
                   </div>
@@ -46,15 +47,15 @@ const HomeTable = () => {
                   </div>
                 </div>
               </td>
-              <td> ---- </td>
-              <td> ---- </td>
+              <td>< img src={img3} alt="" className="table11" /></td>
+              <td><img src={img3} alt="" className="table11" /></td>
               <td>
                 <h6>₹ 800,000</h6>
                 <p>1st year Fees</p>
               </td>
             </tr>
             <tr>
-              <td>#1</td>
+              <td><p className="table12">#2</p></td>
               <td>
                 <div className="table8">
                   <div className="table9">
@@ -64,7 +65,7 @@ const HomeTable = () => {
                     <h6>India institute of Management [ IIM ]</h6>
                     <p>
                       Indore, Madhya Pradesh |{" "}
-                      <i class="fa-solid fa-star" style={{ color: "gold" }}></i>{" "}
+                      <i class="fa-solid fa-star" style={{ color: "gold" }}></i>
                       8.7 / 10
                     </p>
                   </div>
@@ -80,15 +81,15 @@ const HomeTable = () => {
                   </div>
                 </div>
               </td>
-              <td> ---- </td>
-              <td> ---- </td>
+              <td>< img src={img3} alt="" className="table11" /></td>
+              <td><img src={img3} alt="" className="table11" /></td>
               <td>
                 <h6>₹ 800,000</h6>
                 <p>1st year Fees</p>
               </td>
             </tr>
             <tr>
-              <td>#1</td>
+              <td><p className="table12">#3</p></td>
               <td>
                 <div className="table8">
                   <div className="table9">
@@ -98,7 +99,7 @@ const HomeTable = () => {
                     <h6>India institute of Management [ IIM ]</h6>
                     <p>
                       Indore, Madhya Pradesh |{" "}
-                      <i class="fa-solid fa-star" style={{ color: "gold" }}></i>{" "}
+                      <i class="fa-solid fa-star" style={{ color: "gold" }}></i>
                       8.7 / 10
                     </p>
                   </div>
@@ -114,15 +115,15 @@ const HomeTable = () => {
                   </div>
                 </div>
               </td>
-              <td> ---- </td>
-              <td> ---- </td>
+              <td>< img src={img3} alt="" className="table11" /></td>
+              <td><img src={img3} alt="" className="table11" /></td>
               <td>
                 <h6>₹ 800,000</h6>
                 <p>1st year Fees</p>
               </td>
             </tr>
             <tr>
-              <td>#1</td>
+              <td><p className="table12">#4</p></td>
               <td>
                 <div className="table8">
                   <div className="table9">
@@ -132,7 +133,7 @@ const HomeTable = () => {
                     <h6>India institute of Management [ IIM ]</h6>
                     <p>
                       Indore, Madhya Pradesh |{" "}
-                      <i class="fa-solid fa-star" style={{ color: "gold" }}></i>{" "}
+                      <i class="fa-solid fa-star" style={{ color: "gold" }}></i>
                       8.7 / 10
                     </p>
                   </div>
@@ -148,15 +149,15 @@ const HomeTable = () => {
                   </div>
                 </div>
               </td>
-              <td> ---- </td>
-              <td> ---- </td>
+              <td>< img src={img3} alt="" className="table11" /></td>
+              <td><img src={img3} alt="" className="table11" /></td>
               <td>
                 <h6>₹ 800,000</h6>
                 <p>1st year Fees</p>
               </td>
             </tr>
             <tr>
-              <td>#1</td>
+              <td><p className="table12">#5</p></td>
               <td>
                 <div className="table8">
                   <div className="table9">
@@ -166,7 +167,7 @@ const HomeTable = () => {
                     <h6>India institute of Management [ IIM ]</h6>
                     <p>
                       Indore, Madhya Pradesh |{" "}
-                      <i class="fa-solid fa-star" style={{ color: "gold" }}></i>{" "}
+                      <i class="fa-solid fa-star" style={{ color: "gold" }}></i>
                       8.7 / 10
                     </p>
                   </div>
@@ -182,42 +183,8 @@ const HomeTable = () => {
                   </div>
                 </div>
               </td>
-              <td> ---- </td>
-              <td> ---- </td>
-              <td>
-                <h6>₹ 800,000</h6>
-                <p>1st year Fees</p>
-              </td>
-            </tr>
-            <tr>
-              <td>#1</td>
-              <td>
-                <div className="table8">
-                  <div className="table9">
-                    <img src={img} alt="" />
-                  </div>
-                  <div className="table10">
-                    <h6>India institute of Management [ IIM ]</h6>
-                    <p>
-                      Indore, Madhya Pradesh |{" "}
-                      <i class="fa-solid fa-star" style={{ color: "gold" }}></i>{" "}
-                      8.7 / 10
-                    </p>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div className="table8">
-                  <div className="table9">
-                    <img src={img2} alt="" />
-                  </div>
-                  <div className="table10">
-                    <p>#7 out of 281 in india 2022</p>
-                  </div>
-                </div>
-              </td>
-              <td> ---- </td>
-              <td> ---- </td>
+              <td>< img src={img3} alt="" className="table11" /></td>
+              <td><img src={img3} alt="" className="table11" /></td>
               <td>
                 <h6>₹ 800,000</h6>
                 <p>1st year Fees</p>

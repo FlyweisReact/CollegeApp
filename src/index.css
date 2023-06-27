@@ -168,10 +168,10 @@ code {
 .home14 p {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 12.6117px;
   line-height: 17px;
-  color: #000000;
+  color: #1a3b5a;
 }
 .home15 h5 {
   font-family: "Open Sans";
@@ -182,13 +182,16 @@ code {
   color: #000000;
   margin-top: 15px;
 }
+.home15 i {
+  color: #ffec44;
+}
 .home14 h4 {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 14.0129px;
   line-height: 19px;
-  color: #1a3b5a;
+  color: #000000;
 }
 .home15 p {
   font-family: "Open Sans";
@@ -241,6 +244,22 @@ code {
   margin-top: 40px;
   display: flex;
   gap: 20px;
+}
+
+.home20 {
+  color: #000;
+  font-size: 25px;
+  font-family: Open Sans;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.home200 {
+  color: #474747;
+  font-size: 25px;
+  font-family: Open Sans;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .home21 {
@@ -365,22 +384,40 @@ code {
 .foot6 {
   width: 100%;
   border: 1px solid #c8c8c8;
-  margin-top: 80px;
+  margin-top: 0px;
 }
 
 .foot7 {
   display: flex;
   margin-right: 20px;
   justify-content: right;
+  margin-top: 40px;
+  padding-bottom: 40px;
 }
 .foot7 h3 {
-  font-family: "Open Sans";
-  font-style: normal;
+  color: #000;
+  font-size: 18px;
+  font-family: Open Sans;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
+}
+.foot3 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
 
-  color: #000000;
+.foot8 {
+  display: flex;
+
+  gap: 20px;
+  margin-left: 3%;
+  justify-content: space-between;
+  width: 10%;
+}
+.foot8 i {
+  font-size: 20px;
+}
+.foot8 p {
+  margin: 0;
 }
 
 /* ==== navbar styling ===*/
@@ -1104,6 +1141,7 @@ input[type="checkbox"]:checked + label:after {
   font-size: 18px;
   line-height: 25px;
   color: #fff;
+  cursor: pointer;
 }
 
 .app3 {
@@ -1119,11 +1157,13 @@ input[type="checkbox"]:checked + label:after {
   line-height: 25px;
   color: #333;
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .app4 img {
   width: 100px;
   height: 100px;
+  cursor: pointer;
 }
 
 .app5 h2 {
@@ -2374,6 +2414,7 @@ input[type="checkbox"]:checked + label:after {
   display: flex;
   gap: 10px;
   align-items: center;
+  padding-top: 50px;
 }
 .login10 p {
   margin: 0;
@@ -3008,6 +3049,7 @@ input[type="checkbox"]:checked + label:after {
   line-height: 25px;
   color: #000000;
   margin-top: 15px;
+  cursor: pointer;
 }
 .connect5 img {
   width: 10px;
@@ -3624,7 +3666,23 @@ table td {
   padding-bottom: 10px;
   align-items: center;
 }
-
+.table11 {
+  display: block;
+  margin: auto;
+}
+.table12 {
+  color: #000;
+  font-size: 18px;
+  font-family: Open Sans;
+  font-weight: 600;
+  text-align: center;
+}
+.table1 th {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
 /* ==== one stop styling ====*/
 .one1 {
   margin-top: 30px;
@@ -3781,6 +3839,7 @@ table td {
   gap: 20px;
   align-items: center;
   margin-top: 40px;
+  cursor: pointer;
 }
 .profile10 p {
   margin: 0;
@@ -3790,6 +3849,7 @@ table td {
   gap: 20px;
   align-items: center;
   margin-top: 40px;
+  cursor: pointer;
 }
 .profile11 i {
   color: #0185c3;
@@ -4204,6 +4264,7 @@ table td {
   margin-left: 10%;
   width: 80%;
   background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 .menu1 h3 {
   padding-top: 20px;
@@ -4224,8 +4285,19 @@ table td {
 }
 .menu4 {
   background: #9e9e9e;
-  width: 2px;
-  height: 100%;
+  width: 1px;
+  height: 500px;
+}
+.menu3 h6 {
+  color: #000;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 600;
+}
+.menu3 p {
+  color: #000;
+  font-size: 18px;
+  font-family: Open Sans;
 }
 /* ==== extra loan ====*/
 .ext1 {
@@ -4333,26 +4405,458 @@ table td {
   font-family: Open Sans;
   font-weight: 600;
 }
-.elg7 input{
+.elg7 input {
   border-radius: 5px;
   border: 1px solid #707070;
-  background: #E7E7E7;
-  height:40px;
+  background: #e7e7e7;
+  height: 40px;
 }
-.elg8{
-  width:40%;
-  margin-left:80%;
-  border:none;
-  height:40px;
+.elg8 {
+  width: 40%;
+  margin-left: 80%;
+  border: none;
+  height: 40px;
   border-radius: 5px;
   border: 1px solid #707070;
-  background: #1A3B5A;
-  color:#fff;
-  margin-bottom:40px;
-  margin-top:40px;
+  background: #1a3b5a;
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
+
+/*====== PayNow styling ==========*/
+.pay1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 100px;
+  margin-left: 5%;
+  width: 90%;
+}
+.pay2 {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: blue;
+  display: block;
+  margin: auto;
+}
+.pay2 img {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+.pay3 {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: grey;
+  display: block;
+  margin: auto;
+}
+.pay3 img {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.basic1 {
+  margin-top: 30px;
+  margin-left: 5%;
+  width: 90%;
+}
+.basic2 {
+  margin-top: 30px;
+  background: #e7e7e7;
+  width: 100%;
+}
+.basic3 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-left: 2%;
+  width: 96%;
+  gap: 20px;
+}
+.basic4 {
+  display: flex;
+  flex-direction: column;
+}
+.basic4 label {
+  color: #000;
+  font-size: 19.437px;
+  font-family: Open Sans;
+  font-weight: 600;
+}
+.basic4 input {
+  background: transparent;
+  border-radius: 4.859px;
+  border: 0.972px solid #707070;
+  background: #e7e7e7;
+  height: 40px;
+}
+.basic5 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 2%;
+  width: 96%;
+}
+.basic5 button {
+  border: none;
+  border-radius: 5px;
+  background: #0185c3;
+  color: #fff;
+  width: 10%;
+  height: 40px;
+}
+.recp1 {
+  background: #fff;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+  margin-top: 30px;
+  margin-left: 5%;
+  width: 90%;
+}
+.recp1 h4 {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 30px;
+}
+.recp1 p {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 20px;
+}
+.recp2 {
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 40%;
+  text-align: left;
+}
+.recp3 {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 80%;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.recp3 button {
+  border: none;
+  border-radius: 5px;
+  background: #0185c3;
+  color: #fff;
+  width: 10%;
+  height: 40px;
+}
+
+.dec1 {
+  margin-top: 80px;
+  margin-left: 5%;
+  width: 90%;
+  background: #fff;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+}
+.dec1 h6 {
+  color: #000;
+  font-size: 16px;
+  font-family: Open Sans;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.dec2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  width: 50%;
+}
+.pay10 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pay10 p {
+  color: #000;
+  font-size: 16px;
+  font-family: Open Sans;
+  font-weight: 600;
+  text-align: center;
+}
+
+.acad1 {
+  background: #fff;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+  margin-top: 30px;
+  margin-left: 5%;
+  width: 90%;
+}
+.acad2 {
+  padding-top: 30px;
+  margin-left: 5%;
+  width: 90%;
+}
+.acad3 {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.acad3 table {
+  width: 100%;
+  border: 1px solid #757575;
+}
+.acad3 table th {
+  border-right: 1px solid #757575;
+  border-bottom: 1px solid #757575;
+}
+.acad3 table td {
+  border-right: 1px solid #757575;
+  border-bottom: 1px solid #757575;
+}
+.acad3 table tr {
+  height: 80px;
+}
+.acad3 table input {
+  border-radius: 4.859px;
+  border: 0.972px solid #707070;
+  background: #e7e7e7;
+  display: block;
+  margin: auto;
+}
+.acad3 table select {
+  border-radius: 4.859px;
+  border: 0.972px solid #707070;
+  background: #e7e7e7;
+  display: block;
+  margin: auto;
+}
+
+.logoimg {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+}
+
+/*======== college review styling ======*/
+.review1 {
+  background: #e7e7e7;
+  margin-top: 30px;
+  margin-left: 1%;
+  width: 99%;
+}
+.review2 {
+  padding-top: 10px;
+  margin-left: 5%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review2 p {
+  color: #000;
+  font-size: 18px;
+  font-family: Open Sans;
+  font-weight: 600;
+}
+.review3 {
+  margin-top: 15px;
+  margin-left: 5%;
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review3 i {
+  color: #f9b300;
+}
+
+/* ======= infrastructure styling ===========*/
+
+.infra1 {
+  background: #e7e7e7;
+  margin-top: 30px;
+  margin-left: 1%;
+  width: 99%;
+}
+.infra2 {
+  padding-top: 20px;
+  margin-left: 5%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: left;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+.infra3 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.infra4 {
+  margin-top: 30px;
+  margin-left: 1%;
+  width: 90%;
+}
+.infra4 h5 {
+  color: #1a3b5a;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 600;
+}
+.infra4 p {
+  color: #000;
+  font-size: 18px;
+  font-family: Open Sans;
+}
+
+.nav3p p {
+  color: #fff;
+  font-size: 18px;
+  font-family: Open Sans;
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav3p img {
+  width: 20px;
+  height: 20px;
+}
+
+/* =========== cart styling ============*/
+
+.cart1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+.cart2 {
+  width: 70%;
+}
+.cart3 {
+  width: 30%;
+}
+.cart4 {
+  margin-top: 60px;
+  margin-left: 5%;
+  width: 93%;
+}
+
+.cart4 table {
+  width: 100%;
+  border: 1px solid #5e5e5e;
+  margin-top: 30px;
+}
+.cart4 table th {
+  border-right: 1px solid #5e5e5e;
+  border-bottom: 1px solid #5e5e5e;
+}
+.cart4 table td {
+  border-right: 1px solid #5e5e5e;
+  border-bottom: 1px solid #5e5e5e;
+}
+.cart4 h3 {
+  color: #000;
+  font-size: 30px;
+  font-family: Open Sans;
+  font-weight: 600;
+}
+.cart6 {
+  margin-top: 120px;
+  background: #fff;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+  width: 98%;
+}
+.cart7 {
+  padding-top: 30px;
+  margin-left: 5%;
+  width: 90%;
+  padding-bottom: 30px;
+}
+.cart7 h6 {
+  color: #000;
+  font-size: 16px;
+  font-family: Open Sans;
+  font-weight: 600;
+}
+.cart7 hr {
+  background: #c0c0c0;
+}
+.cart8 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart8 p {
+  margin: 0;
+  color: #5f5e5e;
+  font-size: 18px;
+  font-family: Open Sans;
+  font-weight: 600;
+}
+.cart9 {
+  display: flex;
+  justify-content: space-between;
+}
+.cart10 {
+  border-radius: 5px;
+  border: 1px solid #707070;
+  background: #e7e7e7;
+  margin-top: 10px;
+  margin-left: 5%;
+  width: 90%;
+  height: 40px;
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 600;
+}
+.cart7 button {
+  background: #0185c3;
+  display: block;
+  margin: auto;
+  color: #fff;
+  border: none;
+  height: 40px;
+  width: 40%;
+}
+.cart11 {
+  width: 33%;
+}
+.cart12 {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.cart12 button {
+  border: 1px solid #0185c3;
+  color: #0185c3;
+  font-size: 16px;
+  font-family: Open Sans;
+  font-weight: 600;
+  width: 20%;
+  background: #fff;
+  height: 40px;
+}
+
 /*==== mobile styling ====*/
 @media (max-width: 1000px) {
+  .review2 {
+    flex-direction: column;
+  }
+  .infra2 {
+    grid-template-columns: auto auto;
+  }
   /*========= setting styling ======*/
   .setting1 {
     width: 100%;
@@ -4485,8 +4989,13 @@ table td {
   .home3 {
     display: none;
   }
+
   .home4 {
     width: 90%;
+  }
+  .logoimg {
+    width: 80px;
+    height: 80px;
   }
   .car1 img {
     width: 100%;
@@ -4641,7 +5150,7 @@ table td {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
-    width: 100%;
+    width: 95%;
   }
   .clg11 p {
     width: 28%;
@@ -4888,8 +5397,25 @@ table td {
     margin-left: 0;
   }
   /* ======= eligibility check===*/
-  .elg6{
+  .elg6 {
     grid-template-columns: auto;
   }
-
+  /* ===== cart styling ======*/
+  .cart1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .cart2 {
+    width: 100%;
+  }
+  .cart3 {
+    width: 100%;
+  }
+  .cart12 {
+    flex-direction: column;
+    margin-left: 10%;
+  }
+  .cart12 button {
+    width: 80%;
+  }
 }

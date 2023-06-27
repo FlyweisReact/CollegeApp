@@ -16,8 +16,7 @@ const MobileLoanNavbar = () => {
     <>
     <MyVerticallyCenteredModal
         show={show}
-        onHide={() => show(false)}
-        setShow = {setShow}
+        onHide={() => setShow(false)}
       />
       <div className="loan101">
         <div className="loan2">

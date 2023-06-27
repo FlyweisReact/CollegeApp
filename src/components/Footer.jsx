@@ -59,6 +59,12 @@ const Footer = () => {
             <p className="foot5">Madhya Pradesh</p>
           </div>
         </div>
+        <div className="foot8">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
         <hr className="foot6" />
         <div className="foot7">
           <h3>Terms & Conditions | Privacy Policy | 2023 College Hub Internet Co.</h3>

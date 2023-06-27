@@ -14,6 +14,8 @@ function MyVerticallyCenteredModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
+      <Modal.Header closeButton>
+      </Modal.Header>
       <Modal.Body>
         <>
             <div className="council1">
@@ -50,9 +52,6 @@ function MyVerticallyCenteredModal(props) {
             </div>
         </>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={() => props.setShow(false)}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 }
