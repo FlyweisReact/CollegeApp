@@ -37,7 +37,7 @@ const Sidebar2 = () => {
             <i class="fa-solid fa-graduation-cap"></i>
             <p>Career Options</p>
           </div>
-          <div className="profile10">
+          <div className={location.pathname === "/document"?"profile11" : "profile10"} onClick={()=>navigate("/document")}>
             <i class="fa-solid fa-file"></i>
             <p>Documents</p>
           </div>

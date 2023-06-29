@@ -36,6 +36,7 @@ import PayNow from "./components/PayNow";
 import Cart from "./components/Cart";
 import CollegeReview from "./components/CollegeReview";
 import Infrastructure from "./components/Infrastructure";
+import Document from "./components/Document";
 import Mumbai from "./components/Cities/Mumbai";
 import Kolkata from "./components/Cities/Kolkata";
 import Chennai from "./components/Cities/Chennai";
@@ -87,6 +88,7 @@ function App() {
           <Route path="/agra" element={<Agra />} />
           <Route path="/jaipur" element={<Jaipur />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/document" element={<Document />} />
         </Routes>
       </BrowserRouter>
     </>

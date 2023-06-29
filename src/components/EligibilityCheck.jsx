@@ -2,6 +2,8 @@ import React from "react";
 import LoanNavbar from "./LoanNavbar";
 import Footer from "./Footer";
 
+import img from "../Images/c115.png";
+
 const EligibilityCheck = () => {
   return (
     <>
@@ -19,10 +21,10 @@ const EligibilityCheck = () => {
           </h6>
           <div class="radio-inline">
             <input type="radio" id="option1" name="radio-group" />
-            <label for="option1">Never</label>
+            <label for="option1">Within India</label>
 
             <input type="radio" id="option2" name="radio-group" />
-            <label for="option2">Sometimes</label>
+            <label for="option2">Outside India</label>
           </div>
         </div>
         <div className="tst7">
@@ -88,7 +90,7 @@ const EligibilityCheck = () => {
             </select>
           </div>
           <div className="elg4">
-            <label>Type in the length of your course ?</label>
+            <label>Name of the course planning for ?</label>
             <select>
               <option value="">Years</option>
               <option value="">1</option>
@@ -106,13 +108,43 @@ const EligibilityCheck = () => {
           </h6>
           <div class="radio-inline">
             <input type="radio" id="option1" name="radio-group" />
-            <label for="option1">Never</label>
+            <label for="option1">Full TIme</label>
             <input type="radio" id="option2" name="radio-group" />
-            <label for="option2">Sometimes</label>
+            <label for="option2">Part Time</label>
             <input type="radio" id="option2" name="radio-group" />
-            <label for="option2">Sometimes</label>
+            <label for="option2">Distancing Learning</label>
             <input type="radio" id="option2" name="radio-group" />
-            <label for="option2">Sometimes</label>
+            <label for="option2">Others</label>
+          </div>
+        </div>
+        <div className="elg9">
+          <div className="elg10">
+            <p>Enter your course fees</p>
+            <img src={img} alt="" />
+          </div>
+          <div className="elg11">
+            <select>
+              <option value="">100000</option>
+              <option value="">200000</option>
+              <option value="">300000</option>
+              <option value="">400000</option>
+            </select>
+            <p>INR</p>
+          </div>
+        </div>
+        <div className="elg9">
+          <div className="elg10">
+            <p>Enter the amount you intend to invest by yourself</p>
+            <img src={img} alt="" />
+          </div>
+          <div className="elg11">
+            <select>
+              <option value="">4000000</option>
+              <option value="">6000000</option>
+              <option value="">8000000</option>
+              <option value="">9000000</option>
+            </select>
+            <p>INR</p>
           </div>
         </div>
         <div className="elg5">

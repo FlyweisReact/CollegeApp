@@ -52,7 +52,7 @@ code {
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
-  color: #000;
+  color: #1a3b5a;
   mix-blend-mode: luminosity;
   cursor: pointer;
 }
@@ -2790,16 +2790,17 @@ input[type="checkbox"]:checked + label:after {
   border: 1px solid #349dcf;
   border-radius: 10px;
   width: 10%;
+  height: 40px;
 }
 .council3 p {
   text-align: center;
   color: #349dcf;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .council4 input {
   border: 1px solid #349dcf;
   border-radius: 10px;
-  width: 80%;
+  width: 88%;
   height: 40px;
 }
 .council4 input:focus {
@@ -3274,6 +3275,10 @@ input[type="checkbox"]:checked + label:after {
 .drop3 p {
   margin: 0;
   padding-top: 10px;
+  color: #1a3b5a;
+  font-size: 18px;
+  font-family: Open Sans;
+  font-weight: 600;
 }
 
 .home100 {
@@ -3759,6 +3764,9 @@ table td {
 }
 .profile4 {
   margin-top: 40px;
+}
+.profile4 h6 {
+  margin-top: 30px;
 }
 .profile5 {
   margin-top: 20px;
@@ -4253,7 +4261,7 @@ table td {
   color: #fff;
   border: none;
   margin-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /* ==== Menu ====*/
@@ -4422,6 +4430,54 @@ table td {
   color: #fff;
   margin-bottom: 40px;
   margin-top: 40px;
+}
+
+.elg9 {
+  margin-top: 30px;
+  margin-left: 1%;
+}
+.elg10 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.elg10 p {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 600;
+  margin: 0;
+}
+.elg11 {
+  border-radius: 5px;
+  border: 1px solid #707070;
+  background: #e7e7e7;
+  margin-top: 10px;
+  margin-left: 1%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+.elg11 select {
+  border: none;
+  width: 80%;
+  background: transparent;
+}
+.elg11 p {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-weight: 600;
+  margin-top: 10px;
+  margin: 0;
+  margin-right: 20px;
+}
+select:focus {
+  outline: none;
 }
 
 /*====== PayNow styling ==========*/
@@ -4849,6 +4905,87 @@ table td {
   height: 40px;
 }
 
+/* ========== document styling ======*/
+.doc1 {
+  margin-top: 30px;
+  margin-left: 1%;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.doc2 {
+  width: 50%;
+}
+.doc2 h5 {
+  padding-top: 30px;
+  color: #0185c3;
+  font-size: 25px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.doc2 p {
+  color: #000;
+  font-size: 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 20px;
+}
+.doc4 {
+  margin-top: 30px;
+  margin-left: 1%;
+  width: 98%;
+  background: #fff;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+}
+.doc4 h6 {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.doc5 {
+  margin-top: 40px;
+  margin-left: 5%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+.doc6 {
+  border: 1px solid #0185c3;
+}
+.doc7 {
+  padding-top: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: 10%;
+}
+.doc7 p {
+  margin: 0;
+  color: #000;
+  font-size: 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.doc6 h5 {
+  color: #000;
+  font-size: 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
 /*==== mobile styling ====*/
 @media (max-width: 1000px) {
   .review2 {

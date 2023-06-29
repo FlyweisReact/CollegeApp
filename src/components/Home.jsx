@@ -178,6 +178,67 @@ const Home = () => {
     return (
       <>
         <div className="menu1">
+          <h3>Top Exams</h3>
+          <div className="menu2">
+            <div className="menu3">
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+            <div className="menu3">
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+              <p>Lorem Ipsum</p>
+            </div>
+            <div className="menu4"></div>
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  const [showNavbar2, setShowNavbar2] = useState(false);
+  function NavMenu2() {
+    return (
+      <>
+        <div className="menu1">
           <h3>Top Universities</h3>
           <div className="menu2">
             <div className="menu3">
@@ -242,6 +303,10 @@ const Home = () => {
     setShowNavbar((prev) => !prev);
   };
 
+  const handleClick2 = () => {
+    setShowNavbar2((prev) => !prev);
+  };
+
   const handleFaltu = () => {
     setFaltu((prev) => !prev);
   };
@@ -270,7 +335,7 @@ const Home = () => {
                   <p onClick={handleClick}>Top Universities</p>
                   <p onClick={handleClick}>Top Courses</p>
                   <p onClick={() => navigate("/scholarships")}>Scholarship</p>
-                  <p onClick={handleClick}>Exam</p>
+                  <p onClick={handleClick2}>Exam</p>
                   <p onClick={() => navigate("/common-applications")}>
                     Common Application
                   </p>
@@ -329,7 +394,8 @@ const Home = () => {
                 <p onClick={() => setShow(true)}>Login</p>
               </div>
             </div>
-            {showNavbar ? <NavMenu /> : " "}
+            {showNavbar ? <NavMenu2 /> : " "}
+            {showNavbar2 ? <NavMenu />: ""}
             <div className="home4">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input
@@ -650,7 +716,7 @@ const Home = () => {
                   <p>30,000 yearly</p>
                 </div>
                 <div className="home15">
-                  <h5>9.5/10</h5>
+                  <h5><i class="fa-solid fa-star"></i> 9.5/10</h5>
                   <p>20.5k Reviews</p>
                 </div>
               </div>
@@ -679,7 +745,7 @@ const Home = () => {
                   <p>30,000 yearly</p>
                 </div>
                 <div className="home15">
-                  <h5>9.5/10</h5>
+                  <h5> <i class="fa-solid fa-star"></i> 9.5/10</h5>
                   <p>20.5k Reviews</p>
                 </div>
               </div>
@@ -708,7 +774,7 @@ const Home = () => {
                   <p>30,000 yearly</p>
                 </div>
                 <div className="home15">
-                  <h5>9.5/10</h5>
+                  <h5> <i class="fa-solid fa-star"></i> 9.5/10</h5>
                   <p>20.5k Reviews</p>
                 </div>
               </div>
@@ -737,7 +803,7 @@ const Home = () => {
                   <p>30,000 yearly</p>
                 </div>
                 <div className="home15">
-                  <h5>9.5/10</h5>
+                  <h5> <i class="fa-solid fa-star"></i> 9.5/10</h5>
                   <p>20.5k Reviews</p>
                 </div>
               </div>
@@ -766,7 +832,7 @@ const Home = () => {
                   <p>30,000 yearly</p>
                 </div>
                 <div className="home15">
-                  <h5>9.5/10</h5>
+                  <h5> <i class="fa-solid fa-star"></i> 9.5/10</h5>
                   <p>20.5k Reviews</p>
                 </div>
               </div>
@@ -798,7 +864,7 @@ const Home = () => {
               <button className="home27">City Name</button>
             </div>
             <div className="home29">
-              <button className="home28">MBA/PGDM</button>
+              <button className="home28" style={{width:"120px"}}>MBA/PGDM</button>
             </div>
             <div className="home29">
               <button className="home28">B.sc</button>
