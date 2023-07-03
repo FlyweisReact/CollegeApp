@@ -12,6 +12,7 @@ import MyVerticallyCenteredModal from "./CouncilModal";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import MobileLoanNavbar from "./MobileLoanNavabr";
 import LoginModal from "./LoginModal";
+import TopNavbar from "./TopNavbar";
 
 const CommonApplication = () => {
   const navigate = useNavigate();
@@ -106,40 +107,7 @@ const CommonApplication = () => {
           <img src={img} />
         </div>
         <div className="home2">
-          <div className=" sch1 app4">
-            <img src={img2} alt="" onClick={() => navigate("/")} />
-            <div className="connect4">
-          <div className="connect5 nav3p">
-            <p>Courses</p>
-            <img src={img3} alt="" onClick={handleClick} />
-          </div>
-          <div className="connect5 nav3p">
-            <p>Colleges</p>
-            <img src={img3} alt="" onClick={handleClick} />
-          </div>
-          <div className="connect5 cnt nav3p">
-            <p>Study Guide</p>
-            <img src={img3} alt="" onClick={handleClick} />
-          </div>
-          <div className="connect5 nav3p">
-            <p onClick={()=>navigate("/test2")}>Test</p>
-          </div>
-          <div className="connect5 cnt nav3p">
-            <p onClick={() => setShow(true)}>Get Counselling</p>
-          </div>
-        </div>
-            {/*<div className="app2 ">
-              <p>Courses</p>
-              <p>Colleges</p>
-              <p>Style Guide</p>
-              <p onClick={()=>navigate("/test2")}>Test</p>
-              <p onClick={()=>setShow(true)}>Get Counselling</p>
-            </div>*/}
-            <div className="app3" onClick={()=>setShow3(true)}>
-              <i class="fa-solid fa-user"></i>
-              <p>Login</p>
-            </div>
-          </div>
+          <TopNavbar color="white"/>
           {
           showNavbar ? <NavMenu /> : " "
           }
@@ -175,19 +143,19 @@ const CommonApplication = () => {
         </div>
         <div className="app17">
           <div className="app16">
-            <p>Preferred City</p>
+            <p>Payment Mode</p>
           </div>
           <div className="app16">
-            <p>Preferred City</p>
+            <p>Course Type</p>
           </div>
           <div className="app16">
-            <p>Preferred City</p>
+            <p>Engineering</p>
           </div>
           <div className="app16">
-            <p>Preferred City</p>
+            <p>Management UG</p>
           </div>
           <div className="app16">
-            <p>Preferred City</p>
+            <p>Computer </p>
           </div>
         </div>
         <div className="app18">

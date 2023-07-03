@@ -21,6 +21,7 @@ import img15 from "../Images/c77.png";
 import img16 from "../Images/c78.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import TopNavbar from "./TopNavbar";
 
 const Loan = () => {
   const [show, setShow] = useState(false);
@@ -29,8 +30,8 @@ const Loan = () => {
   const navigate = useNavigate();
   return (
     <>
-      <LoanNavbar />
-      <div className="loan5">
+    <div className="loan5">
+      <TopNavbar color="white" />
       <div className="loan100">
         <i class="fa-solid fa-bars" onClick={handleShow}></i>
       </div>

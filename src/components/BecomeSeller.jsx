@@ -8,6 +8,8 @@ import MobileLoanNavbar from "./MobileLoanNavabr";
 import img2 from "../Images/c89.png";
 import img3 from "../Images/c90.png";
 
+import TopNavbar from "./TopNavbar";
+
 const BecomeSeller = () => {
   const navigate = useNavigate();
 
@@ -18,7 +20,7 @@ const BecomeSeller = () => {
   return (
     <>
       <div className="seller1">
-        <Navbar2 />
+        <TopNavbar color="white"/>
         <div className="home100">
           <i class="fa-solid fa-bars" onClick={handleShow}></i>
         </div>
@@ -140,7 +142,7 @@ const BecomeSeller = () => {
         <h6>Trust By Leading Institutions</h6>
         <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, 
           ac aliquet odio mattis.</p>
-          <button>Explore Instructions</button>
+          <button>Explore Institution</button>
       </div>
       <Offcanvas show={show2} onHide={handleClose}>
         <Offcanvas.Header closeButton>

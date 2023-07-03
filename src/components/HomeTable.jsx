@@ -17,6 +17,7 @@ const HomeTable = () => {
               <th className="table5">Cut off</th>
               <th className="table6">Application Date</th>
               <th className="table7">Fees</th>
+              <th className="table7">Options</th>
             </tr>
           </thead>
           <tbody>
@@ -53,6 +54,12 @@ const HomeTable = () => {
                 <h6>₹ 800,000</h6>
                 <p>1st year Fees</p>
               </td>
+              <td>
+                <div className="table13">
+                  <button>Apply Now</button>
+                  <button>Add to shortlist</button>
+                </div>
+              </td>
             </tr>
             <tr>
               <td><p className="table12">#2</p></td>
@@ -86,6 +93,12 @@ const HomeTable = () => {
               <td>
                 <h6>₹ 800,000</h6>
                 <p>1st year Fees</p>
+              </td>
+              <td>
+                <div className="table13">
+                  <button>Apply Now</button>
+                  <button>Add to shortlist</button>
+                </div>
               </td>
             </tr>
             <tr>
@@ -121,6 +134,12 @@ const HomeTable = () => {
                 <h6>₹ 800,000</h6>
                 <p>1st year Fees</p>
               </td>
+              <td>
+                <div className="table13">
+                  <button>Apply Now</button>
+                  <button>Add to shortlist</button>
+                </div>
+              </td>
             </tr>
             <tr>
               <td><p className="table12">#4</p></td>
@@ -155,6 +174,12 @@ const HomeTable = () => {
                 <h6>₹ 800,000</h6>
                 <p>1st year Fees</p>
               </td>
+              <td>
+                <div className="table13">
+                  <button>Apply Now</button>
+                  <button>Add to shortlist</button>
+                </div>
+              </td>
             </tr>
             <tr>
               <td><p className="table12">#5</p></td>
@@ -188,6 +213,12 @@ const HomeTable = () => {
               <td>
                 <h6>₹ 800,000</h6>
                 <p>1st year Fees</p>
+              </td>
+              <td>
+                <div className="table13">
+                  <button>Apply Now</button>
+                  <button>Add to shortlist</button>
+                </div>
               </td>
             </tr>
           </tbody>

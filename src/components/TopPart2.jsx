@@ -16,6 +16,8 @@ import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import img27 from "../Images/c59.png";
 
+import TopNavbar from "./TopNavbar";
+
 import img4 from "../Images/c1.png";
 import img5 from "../Images/c85.png";
 
@@ -162,40 +164,7 @@ const TopPart2 = () => {
           <img src={img} />
         </div>
         <div className="home2">
-          <div className=" sch1 app4">
-            <img src={img4} alt="" onClick={() => navigate("/")} />
-            <div className="connect4">
-              <div className="connect5 ">
-                <p>Courses</p>
-                <img src={img5} alt="" onClick={handleClick} />
-              </div>
-              <div className="connect5 ">
-                <p>Colleges</p>
-                <img src={img5} alt="" onClick={handleClick} />
-              </div>
-              <div className="connect5 cnt ">
-                <p>Study Guide</p>
-                <img src={img5} alt="" onClick={handleClick} />
-              </div>
-              <div className="connect5 ">
-                <p onClick={() => navigate("/test2")}>Test</p>
-              </div>
-              <div className="connect5 cnt ">
-                <p onClick={() => setShow(true)}>Get Counselling</p>
-              </div>
-            </div>
-            {/*<div className="app2 ">
-              <p>Courses</p>
-              <p>Colleges</p>
-              <p>Style Guide</p>
-              <p onClick={()=>navigate("/test2")}>Test</p>
-              <p onClick={()=>setShow(true)}>Get Counselling</p>
-            </div>*/}
-            <div className="app3" onClick={() => setShow3(true)}>
-              <i class="fa-solid fa-user"></i>
-              <p>Login</p>
-            </div>
-          </div>
+          <TopNavbar />
           {showNavbar ? <NavMenu /> : " "}
           <div className="home5 sch2 app5">
             <h2>

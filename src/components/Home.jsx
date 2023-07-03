@@ -29,14 +29,15 @@ import img23 from "../Images/c23.png";
 import img24 from "../Images/c24.png";
 import img25 from "../Images/c25.png";
 import img26 from "../Images/c26.png";
-import img27 from "../Images/c59.png";
 import Dropdown from "react-bootstrap/Dropdown";
-import Modal from "react-bootstrap/Modal";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import HomeTable from "./HomeTable";
 
 import Records from "./data.json";
+
+import TopNavbar from "./TopNavbar";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -103,7 +104,7 @@ const Home = () => {
   ];
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 200,
     slidesToShow: 1,
@@ -111,7 +112,7 @@ const Home = () => {
     autoplay: true,
   };
   const settings2 = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 200,
     slidesToShow: slideShow,
@@ -127,51 +128,7 @@ const Home = () => {
     autoplay: true,
   };
 
-  const [show, setShow] = useState(false);
 
-  function MyVerticallyCenteredModal(props) {
-    console.log("Hello");
-    return (
-      <Modal
-        {...props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton></Modal.Header>
-        <Modal.Body>
-          <>
-            <div className="login1">
-              <div className="login2">
-                <h4>Login</h4>
-                <div className="login3">
-                  <div className="login4">
-                    <div className="login8">
-                      <div className="login6">
-                        <p>+91</p>
-                      </div>
-                      <div className="login7">
-                        <input
-                          type="text"
-                          placeholder="Enter your mobile number"
-                        />
-                      </div>
-                    </div>
-                    <div className="login9">
-                      <button>Request OTP</button>
-                    </div>
-                  </div>
-                  <div className="login5">
-                    <img src={img27} alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </>
-        </Modal.Body>
-      </Modal>
-    );
-  }
 
   const [showNavbar, setShowNavbar] = useState(false);
   function NavMenu() {
@@ -313,7 +270,6 @@ const Home = () => {
 
   return (
     <>
-      <MyVerticallyCenteredModal show={show} onHide={() => setShow(false)} />
       <div className="home200">
         <div className="home1">
           <Slider {...settings}>
@@ -328,72 +284,8 @@ const Home = () => {
             <div className="home100">
               <i class="fa-solid fa-bars" onClick={handleShow}></i>
             </div>
-            <div className="home3">
-              <img src={img3} alt="" className="logoimg" />
-              <>
-                <div className="drop3">
-                  <p onClick={handleClick}>Top Universities</p>
-                  <p onClick={handleClick}>Top Courses</p>
-                  <p onClick={() => navigate("/scholarships")}>Scholarship</p>
-                  <p onClick={handleClick2}>Exam</p>
-                  <p onClick={() => navigate("/common-applications")}>
-                    Common Application
-                  </p>
-                  <p onClick={() => navigate("/loan")}>Loan</p>
-                  <p onClick={handleClick}>Admission 2023</p>
-                  {/*Records?.map((ele, i) =>
-                  ele?.item ? (
-                    <Dropdown key={i}>
-                      <Dropdown.Toggle variant="none" id="dropdown-basic">
-                        {ele?.name}
-                      </Dropdown.Toggle>
-                      <div className="drop1">
-                        <Dropdown.Menu style={{ display: "flex" }}>
-                          {ele?.item?.map((element) => (
-                            <Dropdown.Item>
-                              <div className="drop2">
-                                {element?.name}
-                                {element?.subItems?.map((ele, i) => (
-                                  <>
-                                    <p>{ele}</p>
-                                  </>
-                                ))}
-                              </div>
-                            </Dropdown.Item>
-                          ))}
-                        </Dropdown.Menu>
-                      </div>
-                    </Dropdown>
-                  ) : (
-                      <p
-                        onClick={() => navigate(ele?.link)}
-                      >
-                        {ele?.name}
-                      </p>
-                  )
-                )*/}
-                </div>
-              </>
-              <p>
-                <Dropdown>
-                  <Dropdown.Toggle variant="none" id="dropdown-basic">
-                    More
-                  </Dropdown.Toggle>
+            <TopNavbar />
 
-                  <Dropdown.Menu>
-                    {moreMenu?.map((ele, i) => (
-                      <Dropdown.Item href={ele?.link}>
-                        {ele?.name}
-                      </Dropdown.Item>
-                    ))}
-                  </Dropdown.Menu>
-                </Dropdown>
-              </p>
-              <div className="login10" style={{ marginTop: "-31px" }}>
-                <i class="fa-solid fa-user"></i>
-                <p onClick={() => setShow(true)}>Login</p>
-              </div>
-            </div>
             {showNavbar ? <NavMenu2 /> : " "}
             {showNavbar2 ? <NavMenu />: ""}
             <div className="home4">
@@ -421,24 +313,24 @@ const Home = () => {
             <img src={img4} alt="" />
             <p>Delhi</p>
           </div>
-          <div className="home9">
-            <img src={img5} alt="" onClick={() => navigate("/mumbai")} />
+          <div className="home9" onClick={() => navigate("/mumbai")} >
+            <img src={img5} alt=""/>
             <p>Mumbai</p>
           </div>
-          <div className="home9">
-            <img src={img6} alt="" onClick={() => navigate("/kolkata")} />
+          <div className="home9" onClick={() => navigate("/kolkata")}>
+            <img src={img6} alt="" />
             <p>Kolkata</p>
           </div>
-          <div className="home9">
-            <img src={img7} alt="" onClick={() => navigate("/chennai")} />
+          <div className="home9" onClick={() => navigate("/chennai")} >
+            <img src={img7} alt=""/>
             <p>Chennai</p>
           </div>
-          <div className="home9">
-            <img src={img8} alt="" onClick={() => navigate("/agra")} />
+          <div className="home9" onClick={() => navigate("/agra")} >
+            <img src={img8} alt=""/>
             <p>Agra</p>
           </div>
-          <div className="home9">
-            <img src={img9} alt="" onClick={() => navigate("/jaipur")} />
+          <div className="home9" onClick={() => navigate("/jaipur")} >
+            <img src={img9} alt="" />
             <p>Jaipur</p>
           </div>
         </div>
@@ -449,7 +341,7 @@ const Home = () => {
         <div className="home11">
           <Slider {...settings2}>
             <div className="home12">
-              <img className="home12img" src={img10} alt="" />
+              <img className="home12img" src={img10} alt="" onClick={()=>navigate("/college-info")}/>
               <div className="home13">
                 <div className="home14">
                   <h4>Jamai milia islamia</h4>
@@ -963,7 +855,7 @@ const Home = () => {
             </p>
             <div className="login10">
               <i class="fa-solid fa-user"></i>
-              <p onClick={() => setShow(true)}>Login</p>
+              <p>Login</p>
             </div>
           </div>
         </Offcanvas.Body>

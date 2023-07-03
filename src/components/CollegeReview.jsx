@@ -140,8 +140,8 @@ const CollegeReview = () => {
           </div>
           <div className="clg30">
             <div className="clg33">
-              <h6>Featured News</h6>
-              <p>Recent News</p>
+              <h6 className="clg33h6">Featured News</h6>
+              <p className="clg33p">Recent News</p>
             </div>
             <hr className="clg34" />
             <div className="clg35">
@@ -178,8 +178,8 @@ const CollegeReview = () => {
           </div>
           <div className="clg30">
             <div className="clg33">
-              <h6>Trending Articles</h6>
-              <p>Recent Articles</p>
+              <h6 className="clg33h6">Trending Articles</h6>
+              <p className="clg33p">Recent Articles</p>
             </div>
             <hr className="clg34" />
             <div className="clg35">

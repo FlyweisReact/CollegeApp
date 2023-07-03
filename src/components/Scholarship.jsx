@@ -11,6 +11,8 @@ import img4 from "../Images/c36.png";
 import img5 from "../Images/c37.png";
 import img6 from "../Images/c38.png";
 
+import TopNavbar from "./TopNavbar";
+
 const Scholarship = () => {
   const navigate = useNavigate();
   const [slideShow2, setSlideShow2] = useState(8);
@@ -124,10 +126,11 @@ const Scholarship = () => {
           <img src={img} />
         </div>
         <div className="home2">
-          <div className=" sch1 app4">
+          <TopNavbar />
+          {/*<div className=" sch1 app4">
             <img src={img2} alt="" onClick={() => navigate("/")} />
             <div className="connect4">
-              <div className="connect5" >
+              <div className="connect5">
                 <p>Courses</p>
                 <img src={img3} alt="" onClick={handleClick} />
               </div>
@@ -146,25 +149,15 @@ const Scholarship = () => {
                 <p onClick={() => setShow(true)}>Get Counselling</p>
               </div>
             </div>
-            {/*<div className="app2 ">
-              <p>Courses</p>
-              <p>Colleges</p>
-              <p>Style Guide</p>
-              <p onClick={()=>navigate("/test2")}>Test</p>
-              <p onClick={()=>setShow(true)}>Get Counselling</p>
-            </div>*/}
             <div className="app3" onClick={() => setShow3(true)}>
               <i class="fa-solid fa-user"></i>
               <p>Login</p>
             </div>
-          </div>
+          </div>*/}
           {showNavbar ? <NavMenu /> : " "}
 
-          <div className="home5 sch2 app5">
-            <h2>
-              One Application and Limitless Possibilities to 200+ Colleges
-              across India!
-            </h2>
+          <div className="home5 sch2">
+            <h2>Getting Quality Education is NowMore Easy...</h2>
           </div>
           <div className="home6">
             <button onClick={() => navigate("/screen2")}>

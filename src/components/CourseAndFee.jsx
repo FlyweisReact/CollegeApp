@@ -15,6 +15,11 @@ const CourseAndFee = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const [flag, setFlag] = useState(false)
+  const getFlag = ()=>{
+    setFlag(prev => !prev);
+  }
   return (
     <>
       <div className="loan100">
@@ -418,8 +423,8 @@ const CourseAndFee = () => {
           </div>
           <div className="clg30">
             <div className="clg33">
-              <h6>Featured News</h6>
-              <p>Recent News</p>
+              <h6 className={!flag?"clg33h6":"clg33p"} onClick={getFlag}>Featured News</h6>
+              <p className={flag?"clg33h6":"clg33p"} onClick={getFlag}>Recent News</p>
             </div>
             <hr className="clg34" />
             <div className="clg35">
@@ -456,8 +461,8 @@ const CourseAndFee = () => {
           </div>
           <div className="clg30">
             <div className="clg33">
-              <h6>Trending Articles</h6>
-              <p>Recent Articles</p>
+              <h6 className={!flag?"clg33h6":"clg33p"} onClick={getFlag}>Trending Articles</h6>
+              <p className={flag?"clg33h6":"clg33p"} onClick={getFlag}>Recent Articles</p>
             </div>
             <hr className="clg34" />
             <div className="clg35">

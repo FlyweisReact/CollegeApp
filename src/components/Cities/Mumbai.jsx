@@ -354,10 +354,10 @@ const Mumbai = () => {
       <Footer />
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title><MobileLoanNavbar /></Offcanvas.Title>
+          <Offcanvas.Title></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-         
+          <MobileLoanNavbar />
           <Sidebar />
         </Offcanvas.Body>
       </Offcanvas>

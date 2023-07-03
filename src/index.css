@@ -59,7 +59,7 @@ code {
 
 .home4 {
   display: flex;
-  width: 70%;
+  width: 60%;
   margin: auto;
   margin-top: 60px;
   height: 50px;
@@ -87,11 +87,13 @@ code {
   margin-top: 60px;
 }
 .home5 h2 {
-  text-align: center;
   color: #fff;
   font-size: 40px;
-  line-height: 50px;
-  margin-left: 40px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: normal;
+  margin-left: 80px;
 }
 
 .home6 {
@@ -265,10 +267,10 @@ code {
 .home21 {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 100px;
-  margin-left: 5%;
-  width: 90%;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 30px;
+  margin-left: 1%;
+  width: 98%;
 }
 .home22 {
   display: flex;
@@ -284,8 +286,8 @@ code {
   cursor: pointer;
 }
 .impimg {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 .home23 h6 {
   margin: 0;
@@ -557,7 +559,7 @@ code {
   margin-top: 30px;
   width: 80%;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto;
   gap: 20px;
 }
 
@@ -601,6 +603,7 @@ code {
 .screen10 {
   display: flex;
   justify-content: space-between;
+  flex-wrap:wrap;
   margin: 0;
 }
 .screen10 li {
@@ -616,6 +619,7 @@ code {
   width: 40%;
   display: flex;
   justify-content: space-between;
+  margin-top:20px;
 }
 .screen11 p {
   font-family: "Open Sans";
@@ -627,8 +631,8 @@ code {
 }
 .screen12 {
   display: flex;
-  width: 50%;
-  margin-left: 40%;
+  width: 90%;
+  margin-left: 5%;
   justify-content: space-between;
   margin-bottom: 30px;
   margin-top: 20px;
@@ -1922,7 +1926,7 @@ input[type="checkbox"]:checked + label:after {
   justify-content: space-between;
   align-items: center;
 }
-.clg33 h6 {
+.clg33h6 {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -1930,8 +1934,9 @@ input[type="checkbox"]:checked + label:after {
   line-height: 22px;
   color: #349dcf;
   margin: 0;
+  cursor:pointer;
 }
-.clg33 p {
+.clg33p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -1939,6 +1944,7 @@ input[type="checkbox"]:checked + label:after {
   line-height: 22px;
   color: #4d4d4d;
   margin: 0;
+  cursor:pointer;
 }
 .clg34 {
   border: 1px solid #bcbcbc;
@@ -2422,6 +2428,7 @@ input[type="checkbox"]:checked + label:after {
 }
 .login10 i {
   color: #0185c3;
+  font-size: 18px;
 }
 
 /* === loan navbar styling === */
@@ -2476,7 +2483,8 @@ input[type="checkbox"]:checked + label:after {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 500px;
+  min-height: 500px;
+  height: 100%;
 }
 .loan6 {
   padding-top: 100px;
@@ -3010,10 +3018,7 @@ input[type="checkbox"]:checked + label:after {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.connect1 img {
-  width: 100%;
-  height: 100%;
-}
+
 .connect2 {
   display: flex;
   justify-content: space-between;
@@ -3250,6 +3255,58 @@ input[type="checkbox"]:checked + label:after {
   padding-bottom: 15px;
   margin-left: 10%;
   width: 80%;
+}
+
+.connect40 {
+  margin-top: 30px;
+  margin-left: 2%;
+  width: 96%;
+  background: #1fb7ff;
+  display: flex;
+}
+.connect41 {
+  width: 70%;
+}
+.connect41 h4 {
+  color: #fff;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 20px;
+  margin-left: 5%;
+  width: 55%;
+}
+.connect43{
+  margin-top:20px;
+  margin-left:5%;
+  display:grid;
+  grid-template-columns: auto auto auto;
+}
+.connect43 li{
+  color: #FFF;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.connect41 button{
+  border:none;
+  margin-left:5%;
+  margin-top:20px;
+  color: #1FB7FF;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height:40px;
+  background:#fff;
+}
+.connect42 {
+  width: 30%;
 }
 
 .nav100 {
@@ -3630,8 +3687,8 @@ input[type="checkbox"]:checked + label:after {
   background: #eeeeee;
   border-radius: 5px;
   margin-top: 30px;
-  margin-left: 5%;
-  width: 90%;
+  margin-left: 1%;
+  width: 98%;
 }
 .table1 table {
   width: 100%;
@@ -3687,6 +3744,19 @@ table td {
   color: #000;
   font-size: 18px;
   font-weight: 600;
+}
+.table13 {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.table13 button {
+  border: none;
+  border-radius: 20px;
+  height: 30px;
+  background: #005780;
+  color: #fff;
 }
 /* ==== one stop styling ====*/
 .one1 {
@@ -4695,8 +4765,8 @@ select:focus {
 }
 
 .logoimg {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   margin-top: 20px;
 }
 
@@ -5555,4 +5625,13 @@ select:focus {
   .cart12 button {
     width: 80%;
   }
+}
+
+
+.navp{
+  font-size: 18px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }
