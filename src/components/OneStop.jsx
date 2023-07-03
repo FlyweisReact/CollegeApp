@@ -1,14 +1,69 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import TopPart2 from "./TopPart2";
 import TopPart3 from "./TopPart3";
 import Footer from "./Footer";
+import Slider from "react-slick";
 
 const OneStop = () => {
+  const [slideShow, setSlideShow] = useState(4);
+
+  useEffect(() => {
+    if (window.innerWidth < 800) {
+      setSlideShow(1);
+    } else if (window.innerWidth > 800 && window.innerWidth < 1100) {
+      setSlideShow(2);
+    } else setSlideShow(4);
+  }, []);
+  const settings3 = {
+    dots: true,
+    infinite: true,
+    speed: 200,
+    slidesToShow: slideShow,
+    slidesToScroll: 1,
+    autoplay: true,
+  };
 
   return (
     <>
       <TopPart2 />
       <TopPart3 />
+      <div className="home25">
+        <h4>We Tried To Help You Pick Easily</h4>
+        <div className="home26">
+          <Slider {...settings3}>
+            <div className="ont1">
+              <div className="ont2">
+                <p>College Application</p>
+              </div>
+            </div>
+            <div className="ont1">
+              <div className="ont2">
+                <p>Pay Offer Acceptance</p>
+              </div>
+            </div>
+            <div className="ont1">
+              <div className="ont2">
+                <p>Apply Scholarship</p>
+              </div>
+            </div>
+            <div className="ont1">
+              <div className="ont2">
+                <p>Apply Education Loan</p>
+              </div>
+            </div>
+            <div className="ont1">
+              <div className="ont2">
+                <p>Apply Education Loan</p>
+              </div>
+            </div>
+            <div className="ont1">
+              <div className="ont2">
+                <p>Apply Education Loan</p>
+              </div>
+            </div>
+          </Slider>
+        </div>
+      </div>
       <div className="one1">
         <div className="one2">
           <div className="one3">

@@ -603,7 +603,7 @@ code {
 .screen10 {
   display: flex;
   justify-content: space-between;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin: 0;
 }
 .screen10 li {
@@ -619,7 +619,7 @@ code {
   width: 40%;
   display: flex;
   justify-content: space-between;
-  margin-top:20px;
+  margin-top: 20px;
 }
 .screen11 p {
   font-family: "Open Sans";
@@ -1934,7 +1934,7 @@ input[type="checkbox"]:checked + label:after {
   line-height: 22px;
   color: #349dcf;
   margin: 0;
-  cursor:pointer;
+  cursor: pointer;
 }
 .clg33p {
   font-family: "Open Sans";
@@ -1944,7 +1944,7 @@ input[type="checkbox"]:checked + label:after {
   line-height: 22px;
   color: #4d4d4d;
   margin: 0;
-  cursor:pointer;
+  cursor: pointer;
 }
 .clg34 {
   border: 1px solid #bcbcbc;
@@ -3278,32 +3278,32 @@ input[type="checkbox"]:checked + label:after {
   margin-left: 5%;
   width: 55%;
 }
-.connect43{
-  margin-top:20px;
-  margin-left:5%;
-  display:grid;
+.connect43 {
+  margin-top: 20px;
+  margin-left: 5%;
+  display: grid;
   grid-template-columns: auto auto auto;
 }
-.connect43 li{
-  color: #FFF;
+.connect43 li {
+  color: #fff;
   font-size: 20px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.connect41 button{
-  border:none;
-  margin-left:5%;
-  margin-top:20px;
-  color: #1FB7FF;
+.connect41 button {
+  border: none;
+  margin-left: 5%;
+  margin-top: 20px;
+  color: #1fb7ff;
   font-size: 20px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  height:40px;
-  background:#fff;
+  height: 40px;
+  background: #fff;
 }
 .connect42 {
   width: 30%;
@@ -3817,6 +3817,7 @@ table td {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
+  color:#fff;
 }
 
 /*===== profile styling ====*/
@@ -5627,11 +5628,39 @@ select:focus {
   }
 }
 
-
-.navp{
+.navp {
   font-size: 18px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+
+.ont2 {
+  border-radius: 10px;
+  border: 1.5px solid #1a3b5a;
+  background: #e7e7e7;
+  width: 250px;
+  height: 50px;
+}
+
+.ont2 p {
+  color: #3f3f3f;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  padding-top:10px;
+}
+.home25 h4{
+  color: #005780;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align:center;
+  margin-bottom:80px;
 }

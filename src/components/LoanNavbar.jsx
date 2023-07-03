@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 
 import MyVerticallyCenteredModal from "./CouncilModal";
+import TopNavbar from "./TopNavbar";
 
 const LoanNavbar = () => {
   const navigate = useNavigate();
@@ -83,8 +84,10 @@ const LoanNavbar = () => {
   return (
     <>
       <MyVerticallyCenteredModal show={show} onHide={() => setShow(false)} />
+     
       <div className="loan1">
-        <div className="loan2">
+        <TopNavbar color="white" />
+        {/*<div className="loan2">
           <img src={img2} alt="" onClick={() => navigate("/")} />
         </div>
         <div className="loan3">
@@ -106,7 +109,7 @@ const LoanNavbar = () => {
           <div className="loan4" onClick={() => setShow(true)}>
             <p>Get Counselling</p>
           </div>
-        </div>
+  </div>*/}
       </div>
       {showNavbar ? <NavMenu /> : " "}
     </>

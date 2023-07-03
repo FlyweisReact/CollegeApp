@@ -132,13 +132,13 @@ const CommonApplication = () => {
             <p>Preferred City</p>
           </div>
           <div className="app16">
-            <p>Preferred City</p>
+            <p>Course Level</p>
           </div>
           <div className="app16">
-            <p>Preferred City</p>
+            <p>Course Stream</p>
           </div>
           <div className="app16">
-            <p>Preferred City</p>
+            <p>Degree Type</p>
           </div>
         </div>
         <div className="app17">
@@ -181,7 +181,7 @@ const CommonApplication = () => {
             <p>MBA</p>
           </div>
         </div>
-        <div className="app18">
+        <div className="app18" style={{marginLeft:"40px"}}>
           <div className="app19">
             <p>BCA</p>
           </div>

@@ -21,7 +21,7 @@ const Scholarship = () => {
       setSlideShow2(3);
     } else if (window.innerWidth > 800 && window.innerWidth < 1100) {
       setSlideShow2(3);
-    } else setSlideShow2(4);
+    } else setSlideShow2(8);
   });
   const settings = {
     dots: true,
@@ -173,7 +173,7 @@ const Scholarship = () => {
               <button className="home27">City Name</button>
             </div>
             <div className="home29">
-              <button className="home28">MBA/PGDM</button>
+              <button className="home28" style={{width:"140px"}}>MBA/PGDM</button>
             </div>
             <div className="home29">
               <button className="home28">B.sc</button>

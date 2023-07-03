@@ -164,10 +164,10 @@ const TopPart2 = () => {
           <img src={img} />
         </div>
         <div className="home2">
-          <TopNavbar />
+          <TopNavbar colori="#0185c3;" />
           {showNavbar ? <NavMenu /> : " "}
           <div className="home5 sch2 app5">
-            <h2>
+            <h2 style={{ color: "#0185c3" }}>
               One Application and Limitless Possibilities to 200+ Colleges
               across India!
             </h2>
