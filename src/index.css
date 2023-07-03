@@ -5664,3 +5664,7 @@ select:focus {
   text-align:center;
   margin-bottom:80px;
 }
+
+.slick-slider{
+  z-index:-99;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import img28 from "../Images/c1.png";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -8,6 +8,25 @@ import img27 from "../Images/c59.png";
 const TopNavbar = (props) => {
   const navigate = useNavigate();
   const [showNavbar, setShowNavbar] = useState(false);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowNavbar(false);
+        setShowNavbar2(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   function NavMenu() {
     return (
       <>
@@ -228,6 +247,12 @@ const TopNavbar = (props) => {
       </Modal>
     );
   }
+
+
+  const data = [
+    "Top Universities " , "Top Courses"
+  ]
+
   return (
     <>
       <div className="home3">
@@ -239,21 +264,34 @@ const TopNavbar = (props) => {
         />
         <>
           <div className="drop3">
-            <p onClick={handleClick} style={{ color: props.color }}>
-              Top Universities
-            </p>
-            <p onClick={handleClick} style={{ color: props.color }}>
-              Top Courses
-            </p>
+            {/* <div ref={dropdownRef}>
+              <p onClick={() => setShowNavbar(!showNavbar)} >Top Universities</p>
+              {showNavbar &&   
+                <NavMenu2 />
+              }
+            </div>
+            <div ref={dropdownRef}>
+              <p onClick={() => setShowNavbar(!showNavbar)} >Top Courses</p>
+              {showNavbar &&   
+                <NavMenu2 />
+              }
+            </div> */}
+
+            {data.map((i , index) => (
+                  <div ref={dropdownRef}>
+                    <p onClick={() => setShowNavbar(true)} style={{color:props.color}}> {i} </p>
+                  </div> 
+            ))}
+
             <p
               onClick={() => navigate("/scholarships")}
               style={{ color: props.color }}
             >
               Scholarship
             </p>
-            <p onClick={handleClick2} style={{ color: props.color }}>
-              Exam
-            </p>
+            <div ref={dropdownRef}>
+                <p onClick={() => setShowNavbar2(true)} style={{color:props.color}}> Exams </p>
+              </div> 
             <p
               onClick={() => navigate("/common-applications")}
               style={{ color: props.color }}
@@ -324,7 +362,7 @@ const TopNavbar = (props) => {
           </p>
         </div>
       </div>
-      {showNavbar ? <NavMenu2 /> : " "}
+      {showNavbar ? <NavMenu2 /> : ""}
       {showNavbar2 ? <NavMenu /> : ""}
       <MyVerticallyCenteredModal show={show} onHide={() => setShow(false)} />
     </>
