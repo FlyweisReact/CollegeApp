@@ -256,27 +256,17 @@ const TopNavbar = (props) => {
   return (
     <>
       <div className="home3">
-        <img
-          src={img28}
-          alt=""
-          onClick={() => navigate("/")}
-          className="logoimg"
-        />
-        <>
+        <div className="newNav">
+          <img
+            src={img28}
+            alt=""
+            onClick={() => navigate("/")}
+            className="logoimg"
+          />
+        </div>
+        
+        <div className="newNav2">
           <div className="drop3">
-            {/* <div ref={dropdownRef}>
-              <p onClick={() => setShowNavbar(!showNavbar)} >Top Universities</p>
-              {showNavbar &&   
-                <NavMenu2 />
-              }
-            </div>
-            <div ref={dropdownRef}>
-              <p onClick={() => setShowNavbar(!showNavbar)} >Top Courses</p>
-              {showNavbar &&   
-                <NavMenu2 />
-              }
-            </div> */}
-
             {data.map((i , index) => (
                   <div ref={dropdownRef}>
                     <p onClick={() => setShowNavbar(true)} style={{color:props.color}}> {i} </p>
@@ -304,62 +294,34 @@ const TopNavbar = (props) => {
             <p onClick={handleClick} style={{ color: props.color }}>
               Admission 2023
             </p>
-            {/*Records?.map((ele, i) =>
-                  ele?.item ? (
-                    <Dropdown key={i}>
-                      <Dropdown.Toggle variant="none" id="dropdown-basic">
-                        {ele?.name}
-                      </Dropdown.Toggle>
-                      <div className="drop1">
-                        <Dropdown.Menu style={{ display: "flex" }}>
-                          {ele?.item?.map((element) => (
-                            <Dropdown.Item>
-                              <div className="drop2">
-                                {element?.name}
-                                {element?.subItems?.map((ele, i) => (
-                                  <>
-                                    <p>{ele}</p>
-                                  </>
-                                ))}
-                              </div>
-                            </Dropdown.Item>
-                          ))}
-                        </Dropdown.Menu>
-                      </div>
-                    </Dropdown>
-                  ) : (
-                      <p
-                        onClick={() => navigate(ele?.link)}
-                      >
-                        {ele?.name}
-                      </p>
-                  )
-                )*/}
-          </div>
-        </>
-        <p style={{ paddingTop: "5px" }} className="navp">
-          <Dropdown>
-            <Dropdown.Toggle
-              variant="none"
-              id="dropdown-basic"
-              style={{ color: props.color }}
-              className="navp"
-            >
-              More
-            </Dropdown.Toggle>
+            <p style={{ paddingTop: "0px", color:props.color }} >
+            <Dropdown className="navp">
+              <Dropdown.Toggle
+                variant="none"
+                id="dropdown-basic"
+                style={{ color: props.color }}
+                className="navp"
+              >
+               More
+              </Dropdown.Toggle>
 
-            <Dropdown.Menu>
-              {moreMenu?.map((ele, i) => (
-                <Dropdown.Item href={ele?.link}>{ele?.name}</Dropdown.Item>
-              ))}
-            </Dropdown.Menu>
-          </Dropdown>
-        </p>
-        <div className="login10" style={{ marginTop: "-31px" }}>
-          <i class="fa-solid fa-user" style={{ color: props.color }}></i>
-          <p onClick={() => setShow(true)} style={{ color: props.color }}>
-            Login
+              <Dropdown.Menu>
+                {moreMenu?.map((ele, i) => (
+                  <Dropdown.Item href={ele?.link}>{ele?.name}</Dropdown.Item>
+                ))}
+              </Dropdown.Menu>
+            </Dropdown>
           </p>
+        </div>
+        
+        </div>
+        <div className="newNav3">
+          <div className="login10" style={{ marginTop: "-31px" }}>
+            <i class="fa-solid fa-user" style={{ color: props.color }}></i>
+            <p onClick={() => setShow(true)} style={{ color: props.color }}>
+              Login
+            </p>
+          </div>
         </div>
       </div>
       {showNavbar ? <NavMenu2 /> : ""}

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar2 from "./Navbar2";
 import Footer from "./Footer";
 import img from "../Images/c86.png";
 import img2 from "../Images/c46.png";
@@ -46,13 +45,13 @@ const CounsellorConnect = () => {
           <i class="fa-solid fa-bars" onClick={handleShow}></i>
         </div>
         <div className="connect7">
-          <div className="connect8">
-            <h2>Connect With India’s Top Counsellor</h2>
-            <p>
+          <div className="connect8" style={{marginBottom:"20px"}}>
+            <h2 style={{color:"#fff"}}>Connect With India’s Top Counsellor</h2>
+            <p style={{color:"#fff"}}>
               Our Counsellor are available throughout for Chat & support at each
               step of your application Process
             </p>
-            <button>Connect</button>
+            <button className="change1">Connect</button>
           </div>
           <div className="connect9">
             <div className="connect10">

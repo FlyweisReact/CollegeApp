@@ -148,9 +148,6 @@ const TopPart2 = () => {
     );
   }
 
-  const handleClick = () => {
-    setShowNavbar((prev) => !prev);
-  };
 
   return (
     <div className="home1">
@@ -167,7 +164,7 @@ const TopPart2 = () => {
           <TopNavbar colori="#0185c3;" />
           {showNavbar ? <NavMenu /> : " "}
           <div className="home5 sch2 app5">
-            <h2 style={{ color: "#0185c3" }}>
+            <h2 style={{ color: "#fff" }}>
               One Application and Limitless Possibilities to 200+ Colleges
               across India!
             </h2>

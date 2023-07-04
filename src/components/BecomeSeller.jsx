@@ -25,13 +25,12 @@ const BecomeSeller = () => {
           <i class="fa-solid fa-bars" onClick={handleShow}></i>
         </div>
         <div className="connect7">
-          <div className="connect8">
-            <h2>Connect With India’s Top Counsellor</h2>
-            <p>
-              Our Counsellor are available throughout for Chat & support at each
-              step of your application Process
+          <div className="connect8" style={{width:"50%"}}>
+            <h2 style={{color:"#fff"}}>Increase Your Presence and Diversity Your Campus</h2>
+            <p style={{color:"#fff"}}>
+            Register for free and you will be noticed by more Students than ever !
             </p>
-            <button>Register</button>
+            <button className="change1">Register</button>
           </div>
           <div className="connect9">
             <div className="seller2">

@@ -40,9 +40,19 @@ code {
 }
 .home3 {
   display: flex;
-  justify-content: center;
   gap: 40px;
   width: 100%;
+}
+
+/* == new Nav styling ====*/
+.newNav {
+  width: 10%;
+}
+.newNav2 {
+  width: 80%;
+}
+.newNav3 {
+  width: 10%;
 }
 
 .home3 p {
@@ -159,8 +169,8 @@ code {
 .home13 {
   display: flex;
   justify-content: space-between;
-  width: 96%;
-  margin-left: 2%;
+  width: 94%;
+  margin-left: 4%;
   align-items: center;
   margin-top: 10px;
 }
@@ -209,8 +219,8 @@ code {
 .home17 {
   display: flex;
   justify-content: space-between;
-  margin-left: 2%;
-  width: 96%;
+  margin-left: 4%;
+  width: 94%;
   align-items: center;
 }
 .home17 img {
@@ -2420,7 +2430,7 @@ input[type="checkbox"]:checked + label:after {
   display: flex;
   gap: 10px;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 .login10 p {
   margin: 0;
@@ -3326,7 +3336,7 @@ input[type="checkbox"]:checked + label:after {
 .drop3 {
   margin-top: 40px;
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
   align-items: flex-start;
 }
 .drop3 p {
@@ -3757,6 +3767,8 @@ table td {
   height: 30px;
   background: #005780;
   color: #fff;
+  margin-left: 5%;
+  width: 90%;
 }
 /* ==== one stop styling ====*/
 .one1 {
@@ -3770,6 +3782,8 @@ table td {
   grid-template-columns: auto auto auto auto;
   gap: 20px;
   padding-top: 30px;
+  margin-left: 2%;
+  width: 96%;
 }
 .one3 {
   display: flex;
@@ -3817,7 +3831,7 @@ table td {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  color:#fff;
+  color: #fff;
 }
 
 /*===== profile styling ====*/
@@ -4766,9 +4780,9 @@ select:focus {
 }
 
 .logoimg {
-  width: 90px;
-  height: 90px;
-  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+  margin-top: 10px;
 }
 
 /*======== college review styling ======*/
@@ -5634,6 +5648,7 @@ select:focus {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  color: #fff;
 }
 
 .ont2 {
@@ -5652,19 +5667,33 @@ select:focus {
   font-weight: 600;
   line-height: normal;
   text-align: center;
-  padding-top:10px;
+  padding-top: 10px;
 }
-.home25 h4{
+.home25 h4 {
   color: #005780;
   font-size: 20px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  text-align:center;
-  margin-bottom:80px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
-.slick-slider{
-  z-index:-99;
+.slick-slider {
+  z-index: -99;
+}
+
+.dropdown-toggle {
+  color: green;
+}
+
+.change1 {
+  border: 1.5px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

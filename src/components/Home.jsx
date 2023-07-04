@@ -284,7 +284,7 @@ const Home = () => {
             <div className="home100">
               <i class="fa-solid fa-bars" onClick={handleShow}></i>
             </div>
-            <TopNavbar />
+            <TopNavbar color="#1A3B5A" />
 
             {showNavbar ? <NavMenu2 /> : " "}
             {showNavbar2 ? <NavMenu />: ""}
